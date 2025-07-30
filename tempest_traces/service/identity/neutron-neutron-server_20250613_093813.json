@@ -1,0 +1,1462 @@
+{
+  "data": [
+    {
+      "traceID": "5fa20316ad7041db9e343405dba589cc",
+      "spans": [
+        {
+          "traceID": "5fa20316ad7041db9e343405dba589cc",
+          "spanID": "b113657bab28e9c4",
+          "operationName": "WSGI_POST_/v3/projects",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "5fa20316ad7041db9e343405dba589cc",
+              "spanID": "9e343405dba589cc"
+            }
+          ],
+          "startTime": 1749806848598286,
+          "duration": 36106,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v3/projects"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "POST"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": [
+            "invalid parent span IDs=9e343405dba589cc; skipping clock skew adjustment"
+          ]
+        },
+        {
+          "traceID": "5fa20316ad7041db9e343405dba589cc",
+          "spanID": "b1b6e6674f5d390e",
+          "operationName": "WSGI_DELETE_/v3/users/5479d19e691c48c988428af02d9946da",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "5fa20316ad7041db9e343405dba589cc",
+              "spanID": "9e343405dba589cc"
+            }
+          ],
+          "startTime": 1749806848647709,
+          "duration": 346759,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v3/users/5479d19e691c48c988428af02d9946da"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "DELETE"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": [
+            "invalid parent span IDs=9e343405dba589cc; skipping clock skew adjustment"
+          ]
+        },
+        {
+          "traceID": "5fa20316ad7041db9e343405dba589cc",
+          "spanID": "8ef6ad982b1350fb",
+          "operationName": "WSGI_DELETE_/v3/users/f24c93356b3e48f083801986b96fd0c5",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "5fa20316ad7041db9e343405dba589cc",
+              "spanID": "9e343405dba589cc"
+            }
+          ],
+          "startTime": 1749806849007133,
+          "duration": 268094,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v3/users/f24c93356b3e48f083801986b96fd0c5"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "DELETE"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": [
+            "invalid parent span IDs=9e343405dba589cc; skipping clock skew adjustment"
+          ]
+        },
+        {
+          "traceID": "5fa20316ad7041db9e343405dba589cc",
+          "spanID": "9643edf7cdb6b96c",
+          "operationName": "WSGI_POST_/v3/auth/tokens",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "5fa20316ad7041db9e343405dba589cc",
+              "spanID": "9e343405dba589cc"
+            }
+          ],
+          "startTime": 1749806849284619,
+          "duration": 408033,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v3/auth/tokens"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "POST"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": [
+            "invalid parent span IDs=9e343405dba589cc; skipping clock skew adjustment"
+          ]
+        },
+        {
+          "traceID": "5fa20316ad7041db9e343405dba589cc",
+          "spanID": "bc8fd3b25f50da7b",
+          "operationName": "WSGI_GET_/v2.0/security-groups",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "5fa20316ad7041db9e343405dba589cc",
+              "spanID": "9e343405dba589cc"
+            }
+          ],
+          "startTime": 1749806849701957,
+          "duration": 120104245,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v2.0/security-groups"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": "tenant_id=7bbf6b854cf54fc5986fd1dfa1baed68&name=default"
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p2",
+          "warnings": [
+            "invalid parent span IDs=9e343405dba589cc; skipping clock skew adjustment"
+          ]
+        },
+        {
+          "traceID": "5fa20316ad7041db9e343405dba589cc",
+          "spanID": "b3d4def354f7c5a5",
+          "operationName": "WSGI_GET_/v3/auth/tokens",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "5fa20316ad7041db9e343405dba589cc",
+              "spanID": "bc8fd3b25f50da7b"
+            }
+          ],
+          "startTime": 1749806849710131,
+          "duration": 137230,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v3/auth/tokens"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": null
+        },
+        {
+          "traceID": "5fa20316ad7041db9e343405dba589cc",
+          "spanID": "ae6cd11e83893425",
+          "operationName": "WSGI_GET_/v2.0/security-groups",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "5fa20316ad7041db9e343405dba589cc",
+              "spanID": "9e343405dba589cc"
+            }
+          ],
+          "startTime": 1749806909769986,
+          "duration": 116259,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v2.0/security-groups"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": "tenant_id=7bbf6b854cf54fc5986fd1dfa1baed68&name=default"
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p2",
+          "warnings": [
+            "invalid parent span IDs=9e343405dba589cc; skipping clock skew adjustment"
+          ]
+        },
+        {
+          "traceID": "5fa20316ad7041db9e343405dba589cc",
+          "spanID": "94f5bf9a06a99bac",
+          "operationName": "WSGI_POST_/v3/auth/tokens",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "5fa20316ad7041db9e343405dba589cc",
+              "spanID": "9e343405dba589cc"
+            }
+          ],
+          "startTime": 1749806969821225,
+          "duration": 425501,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v3/auth/tokens"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "POST"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": [
+            "invalid parent span IDs=9e343405dba589cc; skipping clock skew adjustment"
+          ]
+        },
+        {
+          "traceID": "5fa20316ad7041db9e343405dba589cc",
+          "spanID": "9b8e5354cae60b05",
+          "operationName": "WSGI_POST_/v3/auth/tokens",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "5fa20316ad7041db9e343405dba589cc",
+              "spanID": "9e343405dba589cc"
+            }
+          ],
+          "startTime": 1749806970258453,
+          "duration": 338106,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v3/auth/tokens"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "POST"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": [
+            "invalid parent span IDs=9e343405dba589cc; skipping clock skew adjustment"
+          ]
+        },
+        {
+          "traceID": "5fa20316ad7041db9e343405dba589cc",
+          "spanID": "a3eda554bb9f40d3",
+          "operationName": "WSGI_GET_/v3/domains",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "5fa20316ad7041db9e343405dba589cc",
+              "spanID": "9e343405dba589cc"
+            }
+          ],
+          "startTime": 1749806970607883,
+          "duration": 101407,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v3/domains"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": "name=Default"
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": [
+            "invalid parent span IDs=9e343405dba589cc; skipping clock skew adjustment"
+          ]
+        },
+        {
+          "traceID": "5fa20316ad7041db9e343405dba589cc",
+          "spanID": "913102d260278269",
+          "operationName": "WSGI_POST_/v3/projects",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "5fa20316ad7041db9e343405dba589cc",
+              "spanID": "9e343405dba589cc"
+            }
+          ],
+          "startTime": 1749806970717987,
+          "duration": 169209,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v3/projects"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "POST"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": [
+            "invalid parent span IDs=9e343405dba589cc; skipping clock skew adjustment"
+          ]
+        },
+        {
+          "traceID": "5fa20316ad7041db9e343405dba589cc",
+          "spanID": "a01f591e1e22f928",
+          "operationName": "WSGI_POST_/v3/users",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "5fa20316ad7041db9e343405dba589cc",
+              "spanID": "9e343405dba589cc"
+            }
+          ],
+          "startTime": 1749806970895867,
+          "duration": 447344,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v3/users"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "POST"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": [
+            "invalid parent span IDs=9e343405dba589cc; skipping clock skew adjustment"
+          ]
+        },
+        {
+          "traceID": "5fa20316ad7041db9e343405dba589cc",
+          "spanID": "924aa7640d0ebaee",
+          "operationName": "WSGI_GET_/v3/roles",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "5fa20316ad7041db9e343405dba589cc",
+              "spanID": "9e343405dba589cc"
+            }
+          ],
+          "startTime": 1749806971352046,
+          "duration": 55282,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v3/roles"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": [
+            "invalid parent span IDs=9e343405dba589cc; skipping clock skew adjustment"
+          ]
+        },
+        {
+          "traceID": "5fa20316ad7041db9e343405dba589cc",
+          "spanID": "8ac6056ff2da0ac4",
+          "operationName": "WSGI_PUT_/v3/projects/3f983491a19e44d8b841e2e476421e85/users/fd9cd14098034e729287a03a6ce4bc84/roles/3fb8d81933314a9492447b0971b659e7",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "5fa20316ad7041db9e343405dba589cc",
+              "spanID": "9e343405dba589cc"
+            }
+          ],
+          "startTime": 1749806971417753,
+          "duration": 132244,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v3/projects/3f983491a19e44d8b841e2e476421e85/users/fd9cd14098034e729287a03a6ce4bc84/roles/3fb8d81933314a9492447b0971b659e7"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "PUT"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": [
+            "invalid parent span IDs=9e343405dba589cc; skipping clock skew adjustment"
+          ]
+        },
+        {
+          "traceID": "5fa20316ad7041db9e343405dba589cc",
+          "spanID": "8e52dfb5ac2971d2",
+          "operationName": "WSGI_GET_/v3/roles",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "5fa20316ad7041db9e343405dba589cc",
+              "spanID": "9e343405dba589cc"
+            }
+          ],
+          "startTime": 1749806971559998,
+          "duration": 159719,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v3/roles"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": [
+            "invalid parent span IDs=9e343405dba589cc; skipping clock skew adjustment"
+          ]
+        },
+        {
+          "traceID": "5fa20316ad7041db9e343405dba589cc",
+          "spanID": "885ff14bc43a463b",
+          "operationName": "WSGI_PUT_/v3/projects/3f983491a19e44d8b841e2e476421e85/users/fd9cd14098034e729287a03a6ce4bc84/roles/b6b9294d8a174676808620b8719940fb",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "5fa20316ad7041db9e343405dba589cc",
+              "spanID": "9e343405dba589cc"
+            }
+          ],
+          "startTime": 1749806971729100,
+          "duration": 48062,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v3/projects/3f983491a19e44d8b841e2e476421e85/users/fd9cd14098034e729287a03a6ce4bc84/roles/b6b9294d8a174676808620b8719940fb"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "PUT"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": [
+            "invalid parent span IDs=9e343405dba589cc; skipping clock skew adjustment"
+          ]
+        },
+        {
+          "traceID": "5fa20316ad7041db9e343405dba589cc",
+          "spanID": "b935c334bbe0ae36",
+          "operationName": "WSGI_POST_/v3/auth/tokens",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "5fa20316ad7041db9e343405dba589cc",
+              "spanID": "9e343405dba589cc"
+            }
+          ],
+          "startTime": 1749806971790989,
+          "duration": 471637,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v3/auth/tokens"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "POST"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": [
+            "invalid parent span IDs=9e343405dba589cc; skipping clock skew adjustment"
+          ]
+        },
+        {
+          "traceID": "5fa20316ad7041db9e343405dba589cc",
+          "spanID": "bb7364527cb91fcf",
+          "operationName": "WSGI_POST_/v3/projects",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "5fa20316ad7041db9e343405dba589cc",
+              "spanID": "9e343405dba589cc"
+            }
+          ],
+          "startTime": 1749806972272029,
+          "duration": 173126,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v3/projects"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "POST"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": [
+            "invalid parent span IDs=9e343405dba589cc; skipping clock skew adjustment"
+          ]
+        },
+        {
+          "traceID": "5fa20316ad7041db9e343405dba589cc",
+          "spanID": "a6751be1fff12564",
+          "operationName": "WSGI_POST_/v3/users",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "5fa20316ad7041db9e343405dba589cc",
+              "spanID": "9e343405dba589cc"
+            }
+          ],
+          "startTime": 1749806972454905,
+          "duration": 419560,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v3/users"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "POST"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": [
+            "invalid parent span IDs=9e343405dba589cc; skipping clock skew adjustment"
+          ]
+        },
+        {
+          "traceID": "5fa20316ad7041db9e343405dba589cc",
+          "spanID": "aa695b50b6bad5aa",
+          "operationName": "WSGI_GET_/v3/roles",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "5fa20316ad7041db9e343405dba589cc",
+              "spanID": "9e343405dba589cc"
+            }
+          ],
+          "startTime": 1749806972882860,
+          "duration": 27679,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v3/roles"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": [
+            "invalid parent span IDs=9e343405dba589cc; skipping clock skew adjustment"
+          ]
+        },
+        {
+          "traceID": "5fa20316ad7041db9e343405dba589cc",
+          "spanID": "91027653863badff",
+          "operationName": "WSGI_PUT_/v3/projects/45d9a2b5f06a4ed9ac906e304552838a/users/cd5d42195bae4f009cb76adb94efdb4e/roles/b6b9294d8a174676808620b8719940fb",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "5fa20316ad7041db9e343405dba589cc",
+              "spanID": "9e343405dba589cc"
+            }
+          ],
+          "startTime": 1749806972919406,
+          "duration": 76489,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v3/projects/45d9a2b5f06a4ed9ac906e304552838a/users/cd5d42195bae4f009cb76adb94efdb4e/roles/b6b9294d8a174676808620b8719940fb"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "PUT"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": [
+            "invalid parent span IDs=9e343405dba589cc; skipping clock skew adjustment"
+          ]
+        },
+        {
+          "traceID": "5fa20316ad7041db9e343405dba589cc",
+          "spanID": "b5449395ed25d5c9",
+          "operationName": "WSGI_GET_/v3/roles",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "5fa20316ad7041db9e343405dba589cc",
+              "spanID": "9e343405dba589cc"
+            }
+          ],
+          "startTime": 1749806973005444,
+          "duration": 118928,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v3/roles"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": [
+            "invalid parent span IDs=9e343405dba589cc; skipping clock skew adjustment"
+          ]
+        },
+        {
+          "traceID": "5fa20316ad7041db9e343405dba589cc",
+          "spanID": "a1815523ff0cfb40",
+          "operationName": "WSGI_PUT_/v3/domains/default/users/cd5d42195bae4f009cb76adb94efdb4e/roles/b6b9294d8a174676808620b8719940fb",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "5fa20316ad7041db9e343405dba589cc",
+              "spanID": "9e343405dba589cc"
+            }
+          ],
+          "startTime": 1749806973133746,
+          "duration": 51105,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v3/domains/default/users/cd5d42195bae4f009cb76adb94efdb4e/roles/b6b9294d8a174676808620b8719940fb"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "PUT"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": [
+            "invalid parent span IDs=9e343405dba589cc; skipping clock skew adjustment"
+          ]
+        },
+        {
+          "traceID": "5fa20316ad7041db9e343405dba589cc",
+          "spanID": "9f57f7e1fad6f4ef",
+          "operationName": "WSGI_GET_/v3/roles",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "5fa20316ad7041db9e343405dba589cc",
+              "spanID": "9e343405dba589cc"
+            }
+          ],
+          "startTime": 1749806973196436,
+          "duration": 131655,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v3/roles"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": [
+            "invalid parent span IDs=9e343405dba589cc; skipping clock skew adjustment"
+          ]
+        },
+        {
+          "traceID": "5fa20316ad7041db9e343405dba589cc",
+          "spanID": "8ef546c6fe7de27c",
+          "operationName": "WSGI_PUT_/v3/projects/45d9a2b5f06a4ed9ac906e304552838a/users/cd5d42195bae4f009cb76adb94efdb4e/roles/b6b9294d8a174676808620b8719940fb",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "5fa20316ad7041db9e343405dba589cc",
+              "spanID": "9e343405dba589cc"
+            }
+          ],
+          "startTime": 1749806973340465,
+          "duration": 46584,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v3/projects/45d9a2b5f06a4ed9ac906e304552838a/users/cd5d42195bae4f009cb76adb94efdb4e/roles/b6b9294d8a174676808620b8719940fb"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "PUT"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": [
+            "invalid parent span IDs=9e343405dba589cc; skipping clock skew adjustment"
+          ]
+        },
+        {
+          "traceID": "5fa20316ad7041db9e343405dba589cc",
+          "spanID": "a6d8eee589026431",
+          "operationName": "WSGI_GET_/v3/roles",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "5fa20316ad7041db9e343405dba589cc",
+              "spanID": "9e343405dba589cc"
+            }
+          ],
+          "startTime": 1749806973395678,
+          "duration": 113240,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v3/roles"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": [
+            "invalid parent span IDs=9e343405dba589cc; skipping clock skew adjustment"
+          ]
+        },
+        {
+          "traceID": "5fa20316ad7041db9e343405dba589cc",
+          "spanID": "adcf699d776dcc08",
+          "operationName": "WSGI_PUT_/v3/projects/45d9a2b5f06a4ed9ac906e304552838a/users/cd5d42195bae4f009cb76adb94efdb4e/roles/b6b9294d8a174676808620b8719940fb",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "5fa20316ad7041db9e343405dba589cc",
+              "spanID": "9e343405dba589cc"
+            }
+          ],
+          "startTime": 1749806973517393,
+          "duration": 44083,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v3/projects/45d9a2b5f06a4ed9ac906e304552838a/users/cd5d42195bae4f009cb76adb94efdb4e/roles/b6b9294d8a174676808620b8719940fb"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "PUT"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": [
+            "invalid parent span IDs=9e343405dba589cc; skipping clock skew adjustment"
+          ]
+        },
+        {
+          "traceID": "5fa20316ad7041db9e343405dba589cc",
+          "spanID": "ba572d2469ba34d4",
+          "operationName": "WSGI_POST_/v3/auth/tokens",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "5fa20316ad7041db9e343405dba589cc",
+              "spanID": "9e343405dba589cc"
+            }
+          ],
+          "startTime": 1749806973575781,
+          "duration": 495763,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v3/auth/tokens"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "POST"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": [
+            "invalid parent span IDs=9e343405dba589cc; skipping clock skew adjustment"
+          ]
+        }
+      ],
+      "processes": {
+        "p1": {
+          "serviceName": "keystone-public",
+          "tags": [
+            {
+              "key": "otel.library.name",
+              "type": "string",
+              "value": "osprofiler.drivers.otlp"
+            }
+          ]
+        },
+        "p2": {
+          "serviceName": "neutron-neutron-server",
+          "tags": [
+            {
+              "key": "otel.library.name",
+              "type": "string",
+              "value": "osprofiler.drivers.otlp"
+            }
+          ]
+        }
+      },
+      "warnings": null
+    }
+  ],
+  "total": 0,
+  "limit": 0,
+  "offset": 0,
+  "errors": null
+}

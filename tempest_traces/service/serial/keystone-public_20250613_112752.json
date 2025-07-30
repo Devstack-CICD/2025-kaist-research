@@ -1,0 +1,287 @@
+{
+  "data": [
+    {
+      "traceID": "a825d1e3f5e9488ab740a15cf9dbd0a2",
+      "spans": [
+        {
+          "traceID": "a825d1e3f5e9488ab740a15cf9dbd0a2",
+          "spanID": "aff0692662ee500b",
+          "operationName": "WSGI_POST_/v2.1/ca1a6d488aa84a84b636a3f7dacae072/os-aggregates",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "a825d1e3f5e9488ab740a15cf9dbd0a2",
+              "spanID": "b740a15cf9dbd0a2"
+            }
+          ],
+          "startTime": 1749813939157327,
+          "duration": 488545,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v2.1/ca1a6d488aa84a84b636a3f7dacae072/os-aggregates"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "POST"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": [
+            "invalid parent span IDs=b740a15cf9dbd0a2; skipping clock skew adjustment"
+          ]
+        },
+        {
+          "traceID": "a825d1e3f5e9488ab740a15cf9dbd0a2",
+          "spanID": "aff31c9bf2ad681c",
+          "operationName": "WSGI_GET_/v3/auth/tokens",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "a825d1e3f5e9488ab740a15cf9dbd0a2",
+              "spanID": "aff0692662ee500b"
+            }
+          ],
+          "startTime": 1749813939237167,
+          "duration": 311990,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v3/auth/tokens"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p2",
+          "warnings": null
+        },
+        {
+          "traceID": "a825d1e3f5e9488ab740a15cf9dbd0a2",
+          "spanID": "94a3c01687f8464e",
+          "operationName": "rpc",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "a825d1e3f5e9488ab740a15cf9dbd0a2",
+              "spanID": "aff0692662ee500b"
+            }
+          ],
+          "startTime": 1749813939633903,
+          "duration": 59,
+          "tags": [
+            {
+              "key": "args",
+              "type": "string",
+              "value": "(<nova.scheduler.manager.SchedulerManager object at 0x7f4d106f4880>, <nova.context.RequestContext object at 0x7f4d0ddb04f0>)"
+            },
+            {
+              "key": "kwargs",
+              "type": "string",
+              "value": "{'aggregates': [Aggregate(created_at=2025-06-13T11:25:39Z,deleted=False,deleted_at=None,hosts=[],id=168,metadata={availability_zone='foo_zone'},name='tempest-aggregate-scenario-887663137',updated_at=None,uuid=60bdd5d2-0db6-43f9-bedb-5657a4434875)]}"
+            },
+            {
+              "key": "name",
+              "type": "string",
+              "value": "nova.scheduler.manager.SchedulerManager.update_aggregates"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "internal"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p3",
+          "warnings": null
+        },
+        {
+          "traceID": "a825d1e3f5e9488ab740a15cf9dbd0a2",
+          "spanID": "bfd4993af4098eb9",
+          "operationName": "rpc",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "a825d1e3f5e9488ab740a15cf9dbd0a2",
+              "spanID": "a289d33c0cac5897"
+            }
+          ],
+          "startTime": 1749813939734357,
+          "duration": 70,
+          "tags": [
+            {
+              "key": "args",
+              "type": "string",
+              "value": "(<nova.scheduler.manager.SchedulerManager object at 0x7f4d106f4880>, <nova.context.RequestContext object at 0x7f4d0ddb1f90>)"
+            },
+            {
+              "key": "kwargs",
+              "type": "string",
+              "value": "{'aggregates': [Aggregate(created_at=2025-06-13T11:25:39Z,deleted=False,deleted_at=None,hosts=[],id=168,metadata={availability_zone='foo_zone',meta_key='meta_value'},name='tempest-aggregate-scenario-887663137',updated_at=None,uuid=60bdd5d2-0db6-43f9-bedb-5657a4434875)]}"
+            },
+            {
+              "key": "name",
+              "type": "string",
+              "value": "nova.scheduler.manager.SchedulerManager.update_aggregates"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "internal"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p3",
+          "warnings": [
+            "invalid parent span IDs=a289d33c0cac5897; skipping clock skew adjustment"
+          ]
+        },
+        {
+          "traceID": "a825d1e3f5e9488ab740a15cf9dbd0a2",
+          "spanID": "b66f05c5b6fc1a9e",
+          "operationName": "WSGI_POST_/v2.1/ca1a6d488aa84a84b636a3f7dacae072/os-aggregates/168/action",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "a825d1e3f5e9488ab740a15cf9dbd0a2",
+              "spanID": "b740a15cf9dbd0a2"
+            }
+          ],
+          "startTime": 1749813939937628,
+          "duration": 141235,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v2.1/ca1a6d488aa84a84b636a3f7dacae072/os-aggregates/168/action"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "POST"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": [
+            "invalid parent span IDs=b740a15cf9dbd0a2; skipping clock skew adjustment"
+          ]
+        }
+      ],
+      "processes": {
+        "p1": {
+          "serviceName": "nova-osapi_compute",
+          "tags": [
+            {
+              "key": "otel.library.name",
+              "type": "string",
+              "value": "osprofiler.drivers.otlp"
+            }
+          ]
+        },
+        "p2": {
+          "serviceName": "keystone-public",
+          "tags": [
+            {
+              "key": "otel.library.name",
+              "type": "string",
+              "value": "osprofiler.drivers.otlp"
+            }
+          ]
+        },
+        "p3": {
+          "serviceName": "nova-nova-scheduler",
+          "tags": [
+            {
+              "key": "otel.library.name",
+              "type": "string",
+              "value": "osprofiler.drivers.otlp"
+            }
+          ]
+        }
+      },
+      "warnings": null
+    }
+  ],
+  "total": 0,
+  "limit": 0,
+  "offset": 0,
+  "errors": null
+}

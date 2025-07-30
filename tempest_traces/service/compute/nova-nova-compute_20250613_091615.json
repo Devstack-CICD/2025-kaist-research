@@ -1,0 +1,284 @@
+{
+  "data": [
+    {
+      "traceID": "23fe96f56f8f4e4283e77f8c135d9fea",
+      "spans": [
+        {
+          "traceID": "23fe96f56f8f4e4283e77f8c135d9fea",
+          "spanID": "8f3d174e61a244d1",
+          "operationName": "WSGI_GET_/v2.1/4bd1db5e99214404803dd216eb50adf4/os-hypervisors",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "23fe96f56f8f4e4283e77f8c135d9fea",
+              "spanID": "83e77f8c135d9fea"
+            }
+          ],
+          "startTime": 1749799156132748,
+          "duration": 76993,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v2.1/4bd1db5e99214404803dd216eb50adf4/os-hypervisors"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": [
+            "invalid parent span IDs=83e77f8c135d9fea; skipping clock skew adjustment"
+          ]
+        },
+        {
+          "traceID": "23fe96f56f8f4e4283e77f8c135d9fea",
+          "spanID": "853b6b411dba42ec",
+          "operationName": "WSGI_GET_/v2.1/4bd1db5e99214404803dd216eb50adf4/os-hypervisors/1",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "23fe96f56f8f4e4283e77f8c135d9fea",
+              "spanID": "83e77f8c135d9fea"
+            }
+          ],
+          "startTime": 1749799156221309,
+          "duration": 63327,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v2.1/4bd1db5e99214404803dd216eb50adf4/os-hypervisors/1"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": [
+            "invalid parent span IDs=83e77f8c135d9fea; skipping clock skew adjustment"
+          ]
+        },
+        {
+          "traceID": "23fe96f56f8f4e4283e77f8c135d9fea",
+          "spanID": "9d075c1c5e8033f0",
+          "operationName": "WSGI_GET_/v2.1/4bd1db5e99214404803dd216eb50adf4/os-hypervisors/2",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "23fe96f56f8f4e4283e77f8c135d9fea",
+              "spanID": "83e77f8c135d9fea"
+            }
+          ],
+          "startTime": 1749799156298205,
+          "duration": 66755,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v2.1/4bd1db5e99214404803dd216eb50adf4/os-hypervisors/2"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": [
+            "invalid parent span IDs=83e77f8c135d9fea; skipping clock skew adjustment"
+          ]
+        },
+        {
+          "traceID": "23fe96f56f8f4e4283e77f8c135d9fea",
+          "spanID": "b4fdcc6166d1e50c",
+          "operationName": "WSGI_GET_/v2.1/4bd1db5e99214404803dd216eb50adf4/os-hypervisors/2/uptime",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "23fe96f56f8f4e4283e77f8c135d9fea",
+              "spanID": "83e77f8c135d9fea"
+            }
+          ],
+          "startTime": 1749799156378587,
+          "duration": 134417,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v2.1/4bd1db5e99214404803dd216eb50adf4/os-hypervisors/2/uptime"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": [
+            "invalid parent span IDs=83e77f8c135d9fea; skipping clock skew adjustment"
+          ]
+        },
+        {
+          "traceID": "23fe96f56f8f4e4283e77f8c135d9fea",
+          "spanID": "aa93f332d80d0f95",
+          "operationName": "rpc",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "23fe96f56f8f4e4283e77f8c135d9fea",
+              "spanID": "b4fdcc6166d1e50c"
+            }
+          ],
+          "startTime": 1749799156455805,
+          "duration": 35317,
+          "tags": [
+            {
+              "key": "args",
+              "type": "string",
+              "value": "(<nova.compute.manager.ComputeManager object at 0x7f9885107310>, <nova.context.RequestContext object at 0x7f98446a2fb0>)"
+            },
+            {
+              "key": "kwargs",
+              "type": "string",
+              "value": "{}"
+            },
+            {
+              "key": "name",
+              "type": "string",
+              "value": "nova.compute.manager.ComputeManager.get_host_uptime"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "internal"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p2",
+          "warnings": null
+        }
+      ],
+      "processes": {
+        "p1": {
+          "serviceName": "nova-osapi_compute",
+          "tags": [
+            {
+              "key": "otel.library.name",
+              "type": "string",
+              "value": "osprofiler.drivers.otlp"
+            }
+          ]
+        },
+        "p2": {
+          "serviceName": "nova-nova-compute",
+          "tags": [
+            {
+              "key": "otel.library.name",
+              "type": "string",
+              "value": "osprofiler.drivers.otlp"
+            }
+          ]
+        }
+      },
+      "warnings": null
+    }
+  ],
+  "total": 0,
+  "limit": 0,
+  "offset": 0,
+  "errors": null
+}

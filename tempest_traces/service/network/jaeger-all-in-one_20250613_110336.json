@@ -1,0 +1,3312 @@
+{
+  "data": [
+    {
+      "traceID": "1a782880f32d74620c467f96edb72d4d",
+      "spans": [
+        {
+          "traceID": "1a782880f32d74620c467f96edb72d4d",
+          "spanID": "0e086a15d384c8f9",
+          "operationName": "/api/services/{service}/operations",
+          "references": [],
+          "startTime": 1749811579038491,
+          "duration": 6565,
+          "tags": [
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "http.flavor",
+              "type": "string",
+              "value": "1.1"
+            },
+            {
+              "key": "net.host.name",
+              "type": "string",
+              "value": "35.216.127.215"
+            },
+            {
+              "key": "net.host.port",
+              "type": "int64",
+              "value": 30168
+            },
+            {
+              "key": "net.sock.peer.addr",
+              "type": "string",
+              "value": "100.64.0.7"
+            },
+            {
+              "key": "net.sock.peer.port",
+              "type": "int64",
+              "value": 52402
+            },
+            {
+              "key": "http.user_agent",
+              "type": "string",
+              "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+            },
+            {
+              "key": "http.route",
+              "type": "string",
+              "value": "/api/services/{service}/operations"
+            },
+            {
+              "key": "http.wrote_bytes",
+              "type": "int64",
+              "value": 2154
+            },
+            {
+              "key": "http.status_code",
+              "type": "int64",
+              "value": 200
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": null
+        },
+        {
+          "traceID": "1a782880f32d74620c467f96edb72d4d",
+          "spanID": "426b09137da91983",
+          "operationName": "GetOperations",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "1a782880f32d74620c467f96edb72d4d",
+              "spanID": "0e086a15d384c8f9"
+            }
+          ],
+          "startTime": 1749811579038529,
+          "duration": 6116,
+          "tags": [
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "internal"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p2",
+          "warnings": null
+        }
+      ],
+      "processes": {
+        "p1": {
+          "serviceName": "jaeger-all-in-one",
+          "tags": [
+            {
+              "key": "host.name",
+              "type": "string",
+              "value": "jaeger-677d9dc8d7-7xgfz"
+            },
+            {
+              "key": "os.type",
+              "type": "string",
+              "value": "linux"
+            },
+            {
+              "key": "otel.library.name",
+              "type": "string",
+              "value": "go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp"
+            },
+            {
+              "key": "otel.library.version",
+              "type": "string",
+              "value": "0.46.1"
+            },
+            {
+              "key": "telemetry.sdk.language",
+              "type": "string",
+              "value": "go"
+            },
+            {
+              "key": "telemetry.sdk.name",
+              "type": "string",
+              "value": "opentelemetry"
+            },
+            {
+              "key": "telemetry.sdk.version",
+              "type": "string",
+              "value": "1.21.0"
+            }
+          ]
+        },
+        "p2": {
+          "serviceName": "jaeger-all-in-one",
+          "tags": [
+            {
+              "key": "host.name",
+              "type": "string",
+              "value": "jaeger-677d9dc8d7-7xgfz"
+            },
+            {
+              "key": "os.type",
+              "type": "string",
+              "value": "linux"
+            },
+            {
+              "key": "otel.library.name",
+              "type": "string",
+              "value": "esSpanStore.SpanReader"
+            },
+            {
+              "key": "telemetry.sdk.language",
+              "type": "string",
+              "value": "go"
+            },
+            {
+              "key": "telemetry.sdk.name",
+              "type": "string",
+              "value": "opentelemetry"
+            },
+            {
+              "key": "telemetry.sdk.version",
+              "type": "string",
+              "value": "1.21.0"
+            }
+          ]
+        }
+      },
+      "warnings": null
+    },
+    {
+      "traceID": "0e81b466a0845c47549ebece1721c9fe",
+      "spans": [
+        {
+          "traceID": "0e81b466a0845c47549ebece1721c9fe",
+          "spanID": "32b7bc618f0a9b53",
+          "operationName": "/api/services/{service}/operations",
+          "references": [],
+          "startTime": 1749809773649838,
+          "duration": 5914,
+          "tags": [
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "http.flavor",
+              "type": "string",
+              "value": "1.1"
+            },
+            {
+              "key": "net.host.name",
+              "type": "string",
+              "value": "35.216.127.215"
+            },
+            {
+              "key": "net.host.port",
+              "type": "int64",
+              "value": 30168
+            },
+            {
+              "key": "net.sock.peer.addr",
+              "type": "string",
+              "value": "100.64.0.7"
+            },
+            {
+              "key": "net.sock.peer.port",
+              "type": "int64",
+              "value": 51417
+            },
+            {
+              "key": "http.user_agent",
+              "type": "string",
+              "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+            },
+            {
+              "key": "http.route",
+              "type": "string",
+              "value": "/api/services/{service}/operations"
+            },
+            {
+              "key": "http.wrote_bytes",
+              "type": "int64",
+              "value": 61
+            },
+            {
+              "key": "http.status_code",
+              "type": "int64",
+              "value": 200
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": null
+        },
+        {
+          "traceID": "0e81b466a0845c47549ebece1721c9fe",
+          "spanID": "300c2d34466e47d5",
+          "operationName": "GetOperations",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "0e81b466a0845c47549ebece1721c9fe",
+              "spanID": "32b7bc618f0a9b53"
+            }
+          ],
+          "startTime": 1749809773649882,
+          "duration": 5495,
+          "tags": [
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "internal"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p2",
+          "warnings": null
+        }
+      ],
+      "processes": {
+        "p1": {
+          "serviceName": "jaeger-all-in-one",
+          "tags": [
+            {
+              "key": "host.name",
+              "type": "string",
+              "value": "jaeger-677d9dc8d7-7xgfz"
+            },
+            {
+              "key": "os.type",
+              "type": "string",
+              "value": "linux"
+            },
+            {
+              "key": "otel.library.name",
+              "type": "string",
+              "value": "go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp"
+            },
+            {
+              "key": "otel.library.version",
+              "type": "string",
+              "value": "0.46.1"
+            },
+            {
+              "key": "telemetry.sdk.language",
+              "type": "string",
+              "value": "go"
+            },
+            {
+              "key": "telemetry.sdk.name",
+              "type": "string",
+              "value": "opentelemetry"
+            },
+            {
+              "key": "telemetry.sdk.version",
+              "type": "string",
+              "value": "1.21.0"
+            }
+          ]
+        },
+        "p2": {
+          "serviceName": "jaeger-all-in-one",
+          "tags": [
+            {
+              "key": "host.name",
+              "type": "string",
+              "value": "jaeger-677d9dc8d7-7xgfz"
+            },
+            {
+              "key": "os.type",
+              "type": "string",
+              "value": "linux"
+            },
+            {
+              "key": "otel.library.name",
+              "type": "string",
+              "value": "esSpanStore.SpanReader"
+            },
+            {
+              "key": "telemetry.sdk.language",
+              "type": "string",
+              "value": "go"
+            },
+            {
+              "key": "telemetry.sdk.name",
+              "type": "string",
+              "value": "opentelemetry"
+            },
+            {
+              "key": "telemetry.sdk.version",
+              "type": "string",
+              "value": "1.21.0"
+            }
+          ]
+        }
+      },
+      "warnings": null
+    },
+    {
+      "traceID": "3fc2f89d262880a1f06d45d040d77209",
+      "spans": [
+        {
+          "traceID": "3fc2f89d262880a1f06d45d040d77209",
+          "spanID": "a64a94dfcce8b1cf",
+          "operationName": "/api/services/{service}/operations",
+          "references": [],
+          "startTime": 1749809771389916,
+          "duration": 8620,
+          "tags": [
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "http.flavor",
+              "type": "string",
+              "value": "1.1"
+            },
+            {
+              "key": "net.host.name",
+              "type": "string",
+              "value": "35.216.127.215"
+            },
+            {
+              "key": "net.host.port",
+              "type": "int64",
+              "value": 30168
+            },
+            {
+              "key": "net.sock.peer.addr",
+              "type": "string",
+              "value": "100.64.0.7"
+            },
+            {
+              "key": "net.sock.peer.port",
+              "type": "int64",
+              "value": 51417
+            },
+            {
+              "key": "http.user_agent",
+              "type": "string",
+              "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+            },
+            {
+              "key": "http.route",
+              "type": "string",
+              "value": "/api/services/{service}/operations"
+            },
+            {
+              "key": "http.wrote_bytes",
+              "type": "int64",
+              "value": 242
+            },
+            {
+              "key": "http.status_code",
+              "type": "int64",
+              "value": 200
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": null
+        },
+        {
+          "traceID": "3fc2f89d262880a1f06d45d040d77209",
+          "spanID": "dabda6fe53d00cba",
+          "operationName": "GetOperations",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "3fc2f89d262880a1f06d45d040d77209",
+              "spanID": "a64a94dfcce8b1cf"
+            }
+          ],
+          "startTime": 1749809771389969,
+          "duration": 7765,
+          "tags": [
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "internal"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p2",
+          "warnings": null
+        }
+      ],
+      "processes": {
+        "p1": {
+          "serviceName": "jaeger-all-in-one",
+          "tags": [
+            {
+              "key": "host.name",
+              "type": "string",
+              "value": "jaeger-677d9dc8d7-7xgfz"
+            },
+            {
+              "key": "os.type",
+              "type": "string",
+              "value": "linux"
+            },
+            {
+              "key": "otel.library.name",
+              "type": "string",
+              "value": "go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp"
+            },
+            {
+              "key": "otel.library.version",
+              "type": "string",
+              "value": "0.46.1"
+            },
+            {
+              "key": "telemetry.sdk.language",
+              "type": "string",
+              "value": "go"
+            },
+            {
+              "key": "telemetry.sdk.name",
+              "type": "string",
+              "value": "opentelemetry"
+            },
+            {
+              "key": "telemetry.sdk.version",
+              "type": "string",
+              "value": "1.21.0"
+            }
+          ]
+        },
+        "p2": {
+          "serviceName": "jaeger-all-in-one",
+          "tags": [
+            {
+              "key": "host.name",
+              "type": "string",
+              "value": "jaeger-677d9dc8d7-7xgfz"
+            },
+            {
+              "key": "os.type",
+              "type": "string",
+              "value": "linux"
+            },
+            {
+              "key": "otel.library.name",
+              "type": "string",
+              "value": "esSpanStore.SpanReader"
+            },
+            {
+              "key": "telemetry.sdk.language",
+              "type": "string",
+              "value": "go"
+            },
+            {
+              "key": "telemetry.sdk.name",
+              "type": "string",
+              "value": "opentelemetry"
+            },
+            {
+              "key": "telemetry.sdk.version",
+              "type": "string",
+              "value": "1.21.0"
+            }
+          ]
+        }
+      },
+      "warnings": null
+    },
+    {
+      "traceID": "3941eb0038db0dbb1b628e6be8374cbe",
+      "spans": [
+        {
+          "traceID": "3941eb0038db0dbb1b628e6be8374cbe",
+          "spanID": "644f7ad14d7a15c2",
+          "operationName": "/api/traces",
+          "references": [],
+          "startTime": 1749811582187632,
+          "duration": 248884,
+          "tags": [
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "http.flavor",
+              "type": "string",
+              "value": "1.1"
+            },
+            {
+              "key": "net.host.name",
+              "type": "string",
+              "value": "35.216.127.215"
+            },
+            {
+              "key": "net.host.port",
+              "type": "int64",
+              "value": 30168
+            },
+            {
+              "key": "net.sock.peer.addr",
+              "type": "string",
+              "value": "100.64.0.7"
+            },
+            {
+              "key": "net.sock.peer.port",
+              "type": "int64",
+              "value": 52402
+            },
+            {
+              "key": "http.user_agent",
+              "type": "string",
+              "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+            },
+            {
+              "key": "http.route",
+              "type": "string",
+              "value": "/api/traces"
+            },
+            {
+              "key": "http.wrote_bytes",
+              "type": "int64",
+              "value": 108006
+            },
+            {
+              "key": "http.status_code",
+              "type": "int64",
+              "value": 200
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": null
+        },
+        {
+          "traceID": "3941eb0038db0dbb1b628e6be8374cbe",
+          "spanID": "6366537e3df20ea5",
+          "operationName": "FindTraces",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "3941eb0038db0dbb1b628e6be8374cbe",
+              "spanID": "644f7ad14d7a15c2"
+            }
+          ],
+          "startTime": 1749811582187678,
+          "duration": 245709,
+          "tags": [
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "internal"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p2",
+          "warnings": null
+        },
+        {
+          "traceID": "3941eb0038db0dbb1b628e6be8374cbe",
+          "spanID": "8fff4282991590be",
+          "operationName": "FindTraceIDs",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "3941eb0038db0dbb1b628e6be8374cbe",
+              "spanID": "6366537e3df20ea5"
+            }
+          ],
+          "startTime": 1749811582187680,
+          "duration": 200360,
+          "tags": [
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "internal"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p2",
+          "warnings": null
+        },
+        {
+          "traceID": "3941eb0038db0dbb1b628e6be8374cbe",
+          "spanID": "55bb97399453cb31",
+          "operationName": "findTraceIDs",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "3941eb0038db0dbb1b628e6be8374cbe",
+              "spanID": "8fff4282991590be"
+            }
+          ],
+          "startTime": 1749811582187682,
+          "duration": 200325,
+          "tags": [
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "internal"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p2",
+          "warnings": null
+        },
+        {
+          "traceID": "3941eb0038db0dbb1b628e6be8374cbe",
+          "spanID": "e9275c08a4e2c845",
+          "operationName": "multiRead",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "3941eb0038db0dbb1b628e6be8374cbe",
+              "spanID": "6366537e3df20ea5"
+            }
+          ],
+          "startTime": 1749811582388048,
+          "duration": 45319,
+          "tags": [
+            {
+              "key": "trace_ids",
+              "type": "string",
+              "value": "[\"0548a7713fb94c93b79441bde90b84e6\",\"165d027338f44b93ae83fe8f0e76f465\",\"dc022030ee03403e9841cb4ec0b8f5fd\",\"3429d84991be40d68511a56eb318b18d\",\"e781f09106694931934f18318abaf096\",\"ada51d54c68d4861ad27b00d704604d8\",\"d4507756b2084703807341a67c027946\",\"7ffcdb1735e04f13b92385a4e355b750\",\"febe1cd0e12545a89cbdbd71f2510eb6\",\"c9cedaae6d2a43258a9101d9cd79da48\",\"fc05c49674194e73b4ed7a41b9bee65f\",\"60ef5043f42b4a4e80296012e961779c\",\"16a1c4057ad84cca9d34c41d453b2a26\",\"f6977a8bde2d46fda0874cca2ea61f47\",\"0bbab34b4dac482098f585c19ea681a3\",\"3d805d37c5164bd483b34126cbfcbda3\",\"fa505fb9cafd4b88a85bce3412ab69d7\",\"3c93ad04667e4793b06482d1c5554821\",\"fb5ad2acc7724aa08a8778f674bd29a4\",\"fbb68361dc054985a535b199a40fea64\"]"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "internal"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p2",
+          "warnings": null
+        }
+      ],
+      "processes": {
+        "p1": {
+          "serviceName": "jaeger-all-in-one",
+          "tags": [
+            {
+              "key": "host.name",
+              "type": "string",
+              "value": "jaeger-677d9dc8d7-7xgfz"
+            },
+            {
+              "key": "os.type",
+              "type": "string",
+              "value": "linux"
+            },
+            {
+              "key": "otel.library.name",
+              "type": "string",
+              "value": "go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp"
+            },
+            {
+              "key": "otel.library.version",
+              "type": "string",
+              "value": "0.46.1"
+            },
+            {
+              "key": "telemetry.sdk.language",
+              "type": "string",
+              "value": "go"
+            },
+            {
+              "key": "telemetry.sdk.name",
+              "type": "string",
+              "value": "opentelemetry"
+            },
+            {
+              "key": "telemetry.sdk.version",
+              "type": "string",
+              "value": "1.21.0"
+            }
+          ]
+        },
+        "p2": {
+          "serviceName": "jaeger-all-in-one",
+          "tags": [
+            {
+              "key": "host.name",
+              "type": "string",
+              "value": "jaeger-677d9dc8d7-7xgfz"
+            },
+            {
+              "key": "os.type",
+              "type": "string",
+              "value": "linux"
+            },
+            {
+              "key": "otel.library.name",
+              "type": "string",
+              "value": "esSpanStore.SpanReader"
+            },
+            {
+              "key": "telemetry.sdk.language",
+              "type": "string",
+              "value": "go"
+            },
+            {
+              "key": "telemetry.sdk.name",
+              "type": "string",
+              "value": "opentelemetry"
+            },
+            {
+              "key": "telemetry.sdk.version",
+              "type": "string",
+              "value": "1.21.0"
+            }
+          ]
+        }
+      },
+      "warnings": null
+    },
+    {
+      "traceID": "218351d735c88c0408aa014e62561125",
+      "spans": [
+        {
+          "traceID": "218351d735c88c0408aa014e62561125",
+          "spanID": "937d6b67a39b34b0",
+          "operationName": "/api/services/{service}/operations",
+          "references": [],
+          "startTime": 1749811581606467,
+          "duration": 13489,
+          "tags": [
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "http.flavor",
+              "type": "string",
+              "value": "1.1"
+            },
+            {
+              "key": "net.host.name",
+              "type": "string",
+              "value": "35.216.127.215"
+            },
+            {
+              "key": "net.host.port",
+              "type": "int64",
+              "value": 30168
+            },
+            {
+              "key": "net.sock.peer.addr",
+              "type": "string",
+              "value": "100.64.0.7"
+            },
+            {
+              "key": "net.sock.peer.port",
+              "type": "int64",
+              "value": 52402
+            },
+            {
+              "key": "http.user_agent",
+              "type": "string",
+              "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+            },
+            {
+              "key": "http.route",
+              "type": "string",
+              "value": "/api/services/{service}/operations"
+            },
+            {
+              "key": "http.wrote_bytes",
+              "type": "int64",
+              "value": 23014
+            },
+            {
+              "key": "http.status_code",
+              "type": "int64",
+              "value": 200
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": null
+        },
+        {
+          "traceID": "218351d735c88c0408aa014e62561125",
+          "spanID": "aaf089aab53e38b9",
+          "operationName": "GetOperations",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "218351d735c88c0408aa014e62561125",
+              "spanID": "937d6b67a39b34b0"
+            }
+          ],
+          "startTime": 1749811581606504,
+          "duration": 12293,
+          "tags": [
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "internal"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p2",
+          "warnings": null
+        }
+      ],
+      "processes": {
+        "p1": {
+          "serviceName": "jaeger-all-in-one",
+          "tags": [
+            {
+              "key": "host.name",
+              "type": "string",
+              "value": "jaeger-677d9dc8d7-7xgfz"
+            },
+            {
+              "key": "os.type",
+              "type": "string",
+              "value": "linux"
+            },
+            {
+              "key": "otel.library.name",
+              "type": "string",
+              "value": "go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp"
+            },
+            {
+              "key": "otel.library.version",
+              "type": "string",
+              "value": "0.46.1"
+            },
+            {
+              "key": "telemetry.sdk.language",
+              "type": "string",
+              "value": "go"
+            },
+            {
+              "key": "telemetry.sdk.name",
+              "type": "string",
+              "value": "opentelemetry"
+            },
+            {
+              "key": "telemetry.sdk.version",
+              "type": "string",
+              "value": "1.21.0"
+            }
+          ]
+        },
+        "p2": {
+          "serviceName": "jaeger-all-in-one",
+          "tags": [
+            {
+              "key": "host.name",
+              "type": "string",
+              "value": "jaeger-677d9dc8d7-7xgfz"
+            },
+            {
+              "key": "os.type",
+              "type": "string",
+              "value": "linux"
+            },
+            {
+              "key": "otel.library.name",
+              "type": "string",
+              "value": "esSpanStore.SpanReader"
+            },
+            {
+              "key": "telemetry.sdk.language",
+              "type": "string",
+              "value": "go"
+            },
+            {
+              "key": "telemetry.sdk.name",
+              "type": "string",
+              "value": "opentelemetry"
+            },
+            {
+              "key": "telemetry.sdk.version",
+              "type": "string",
+              "value": "1.21.0"
+            }
+          ]
+        }
+      },
+      "warnings": null
+    },
+    {
+      "traceID": "d11574c9fa7fa099c1a8b12133ec359a",
+      "spans": [
+        {
+          "traceID": "d11574c9fa7fa099c1a8b12133ec359a",
+          "spanID": "a26f976cf8dfc0a1",
+          "operationName": "/api/traces",
+          "references": [],
+          "startTime": 1749811576662249,
+          "duration": 413386,
+          "tags": [
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "http.flavor",
+              "type": "string",
+              "value": "1.1"
+            },
+            {
+              "key": "net.host.name",
+              "type": "string",
+              "value": "35.216.127.215"
+            },
+            {
+              "key": "net.host.port",
+              "type": "int64",
+              "value": 30168
+            },
+            {
+              "key": "net.sock.peer.addr",
+              "type": "string",
+              "value": "100.64.0.7"
+            },
+            {
+              "key": "net.sock.peer.port",
+              "type": "int64",
+              "value": 52406
+            },
+            {
+              "key": "http.user_agent",
+              "type": "string",
+              "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+            },
+            {
+              "key": "http.route",
+              "type": "string",
+              "value": "/api/traces"
+            },
+            {
+              "key": "http.wrote_bytes",
+              "type": "int64",
+              "value": 40576
+            },
+            {
+              "key": "http.status_code",
+              "type": "int64",
+              "value": 200
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": null
+        },
+        {
+          "traceID": "d11574c9fa7fa099c1a8b12133ec359a",
+          "spanID": "769f86dc728ce39b",
+          "operationName": "FindTraces",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "d11574c9fa7fa099c1a8b12133ec359a",
+              "spanID": "a26f976cf8dfc0a1"
+            }
+          ],
+          "startTime": 1749811576662290,
+          "duration": 411585,
+          "tags": [
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "internal"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p2",
+          "warnings": null
+        },
+        {
+          "traceID": "d11574c9fa7fa099c1a8b12133ec359a",
+          "spanID": "4f7bf5275447b3cd",
+          "operationName": "FindTraceIDs",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "d11574c9fa7fa099c1a8b12133ec359a",
+              "spanID": "769f86dc728ce39b"
+            }
+          ],
+          "startTime": 1749811576662291,
+          "duration": 211212,
+          "tags": [
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "internal"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p2",
+          "warnings": null
+        },
+        {
+          "traceID": "d11574c9fa7fa099c1a8b12133ec359a",
+          "spanID": "44a871f473629982",
+          "operationName": "findTraceIDs",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "d11574c9fa7fa099c1a8b12133ec359a",
+              "spanID": "4f7bf5275447b3cd"
+            }
+          ],
+          "startTime": 1749811576662293,
+          "duration": 211177,
+          "tags": [
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "internal"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p2",
+          "warnings": null
+        },
+        {
+          "traceID": "d11574c9fa7fa099c1a8b12133ec359a",
+          "spanID": "a3fe3a20dfda0453",
+          "operationName": "multiRead",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "d11574c9fa7fa099c1a8b12133ec359a",
+              "spanID": "769f86dc728ce39b"
+            }
+          ],
+          "startTime": 1749811576873511,
+          "duration": 200343,
+          "tags": [
+            {
+              "key": "trace_ids",
+              "type": "string",
+              "value": "[\"468658083d4640158872ecb58cfaf779\",\"a1d4de9eee6b440991093c0b0e924c7e\",\"bcbdc71118b649ba91f5967582eed1b7\",\"ae8586cb809d43a1bcc4824c9c8daed1\",\"bb95791fe1ba476994d2f5076dba3540\",\"9b97b122415e4d22b58ad7ae594b42b0\",\"61c2cbac6c7548a5a75300b8d9433b1e\",\"833878a68d634854bd9e6b34a7d5ddb8\",\"6a48accc90064029a0745b8c36a2baf2\",\"1378fd3709904e20901d26d0e3bce3e7\",\"a6931760d20944b5ae18294395baca98\",\"0b4955836f5549d59c2fd067813d4551\",\"0238c55ddd064bf98b41f27bc8b42ebf\",\"12b9daad29f54c32bb187877d1de3b7e\",\"7ab859e4c038435a9e3daafbc890f016\",\"0929aae298fe43018fbe117629c574b9\",\"c88056ddbab149349f21531d634c6509\",\"4761faeb740341c797a26d6122d0c656\",\"f36e4b9c710543908b440400a8559286\",\"58175c5175e44ac4bb285bf5decae60a\"]"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "internal"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p2",
+          "warnings": null
+        }
+      ],
+      "processes": {
+        "p1": {
+          "serviceName": "jaeger-all-in-one",
+          "tags": [
+            {
+              "key": "host.name",
+              "type": "string",
+              "value": "jaeger-677d9dc8d7-7xgfz"
+            },
+            {
+              "key": "os.type",
+              "type": "string",
+              "value": "linux"
+            },
+            {
+              "key": "otel.library.name",
+              "type": "string",
+              "value": "go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp"
+            },
+            {
+              "key": "otel.library.version",
+              "type": "string",
+              "value": "0.46.1"
+            },
+            {
+              "key": "telemetry.sdk.language",
+              "type": "string",
+              "value": "go"
+            },
+            {
+              "key": "telemetry.sdk.name",
+              "type": "string",
+              "value": "opentelemetry"
+            },
+            {
+              "key": "telemetry.sdk.version",
+              "type": "string",
+              "value": "1.21.0"
+            }
+          ]
+        },
+        "p2": {
+          "serviceName": "jaeger-all-in-one",
+          "tags": [
+            {
+              "key": "host.name",
+              "type": "string",
+              "value": "jaeger-677d9dc8d7-7xgfz"
+            },
+            {
+              "key": "os.type",
+              "type": "string",
+              "value": "linux"
+            },
+            {
+              "key": "otel.library.name",
+              "type": "string",
+              "value": "esSpanStore.SpanReader"
+            },
+            {
+              "key": "telemetry.sdk.language",
+              "type": "string",
+              "value": "go"
+            },
+            {
+              "key": "telemetry.sdk.name",
+              "type": "string",
+              "value": "opentelemetry"
+            },
+            {
+              "key": "telemetry.sdk.version",
+              "type": "string",
+              "value": "1.21.0"
+            }
+          ]
+        }
+      },
+      "warnings": null
+    },
+    {
+      "traceID": "a1dcf32722dac5b67806a7daec0e6e23",
+      "spans": [
+        {
+          "traceID": "a1dcf32722dac5b67806a7daec0e6e23",
+          "spanID": "9c712e4a88bb35c6",
+          "operationName": "/api/traces",
+          "references": [],
+          "startTime": 1749809780430369,
+          "duration": 295673,
+          "tags": [
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "http.flavor",
+              "type": "string",
+              "value": "1.1"
+            },
+            {
+              "key": "net.host.name",
+              "type": "string",
+              "value": "35.216.127.215"
+            },
+            {
+              "key": "net.host.port",
+              "type": "int64",
+              "value": 30168
+            },
+            {
+              "key": "net.sock.peer.addr",
+              "type": "string",
+              "value": "100.64.0.7"
+            },
+            {
+              "key": "net.sock.peer.port",
+              "type": "int64",
+              "value": 51417
+            },
+            {
+              "key": "http.user_agent",
+              "type": "string",
+              "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+            },
+            {
+              "key": "http.route",
+              "type": "string",
+              "value": "/api/traces"
+            },
+            {
+              "key": "http.wrote_bytes",
+              "type": "int64",
+              "value": 172521
+            },
+            {
+              "key": "http.status_code",
+              "type": "int64",
+              "value": 200
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": null
+        },
+        {
+          "traceID": "a1dcf32722dac5b67806a7daec0e6e23",
+          "spanID": "3bf2a29b157c5bfc",
+          "operationName": "FindTraces",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "a1dcf32722dac5b67806a7daec0e6e23",
+              "spanID": "9c712e4a88bb35c6"
+            }
+          ],
+          "startTime": 1749809780430421,
+          "duration": 290883,
+          "tags": [
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "internal"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p2",
+          "warnings": null
+        },
+        {
+          "traceID": "a1dcf32722dac5b67806a7daec0e6e23",
+          "spanID": "2e6bbb6d6ccfca6f",
+          "operationName": "FindTraceIDs",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "a1dcf32722dac5b67806a7daec0e6e23",
+              "spanID": "3bf2a29b157c5bfc"
+            }
+          ],
+          "startTime": 1749809780430422,
+          "duration": 218434,
+          "tags": [
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "internal"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p2",
+          "warnings": null
+        },
+        {
+          "traceID": "a1dcf32722dac5b67806a7daec0e6e23",
+          "spanID": "802b5d6c13685f3b",
+          "operationName": "findTraceIDs",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "a1dcf32722dac5b67806a7daec0e6e23",
+              "spanID": "2e6bbb6d6ccfca6f"
+            }
+          ],
+          "startTime": 1749809780430424,
+          "duration": 218408,
+          "tags": [
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "internal"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p2",
+          "warnings": null
+        },
+        {
+          "traceID": "a1dcf32722dac5b67806a7daec0e6e23",
+          "spanID": "8ede7f6ba4fc4fda",
+          "operationName": "multiRead",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "a1dcf32722dac5b67806a7daec0e6e23",
+              "spanID": "3bf2a29b157c5bfc"
+            }
+          ],
+          "startTime": 1749809780648864,
+          "duration": 72419,
+          "tags": [
+            {
+              "key": "trace_ids",
+              "type": "string",
+              "value": "[\"db3521f98617489198632313e94fefdb\",\"a4844f5ea5a94a4b93019e1b541442fb\",\"70d2195ef9a24782a7f8302996149931\",\"0e53253c47ed4c7fa0931f3b40ef6540\",\"0a91f50cc9bf4171b529ad2ce0f5e5e3\",\"8290e2e90edc4d7c87f97f0e42f85fe8\",\"345ee7320c114051a226a892d004c88a\",\"1a38b9ce926d40f789db1b5eecafab6c\",\"9307ab0e2c074a4283479f6924e46845\",\"ffeaccc64823435dae922db4b86390e0\",\"e94231d7205841f1b9f93b610de4436a\"]"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "internal"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p2",
+          "warnings": null
+        }
+      ],
+      "processes": {
+        "p1": {
+          "serviceName": "jaeger-all-in-one",
+          "tags": [
+            {
+              "key": "host.name",
+              "type": "string",
+              "value": "jaeger-677d9dc8d7-7xgfz"
+            },
+            {
+              "key": "os.type",
+              "type": "string",
+              "value": "linux"
+            },
+            {
+              "key": "otel.library.name",
+              "type": "string",
+              "value": "go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp"
+            },
+            {
+              "key": "otel.library.version",
+              "type": "string",
+              "value": "0.46.1"
+            },
+            {
+              "key": "telemetry.sdk.language",
+              "type": "string",
+              "value": "go"
+            },
+            {
+              "key": "telemetry.sdk.name",
+              "type": "string",
+              "value": "opentelemetry"
+            },
+            {
+              "key": "telemetry.sdk.version",
+              "type": "string",
+              "value": "1.21.0"
+            }
+          ]
+        },
+        "p2": {
+          "serviceName": "jaeger-all-in-one",
+          "tags": [
+            {
+              "key": "host.name",
+              "type": "string",
+              "value": "jaeger-677d9dc8d7-7xgfz"
+            },
+            {
+              "key": "os.type",
+              "type": "string",
+              "value": "linux"
+            },
+            {
+              "key": "otel.library.name",
+              "type": "string",
+              "value": "esSpanStore.SpanReader"
+            },
+            {
+              "key": "telemetry.sdk.language",
+              "type": "string",
+              "value": "go"
+            },
+            {
+              "key": "telemetry.sdk.name",
+              "type": "string",
+              "value": "opentelemetry"
+            },
+            {
+              "key": "telemetry.sdk.version",
+              "type": "string",
+              "value": "1.21.0"
+            }
+          ]
+        }
+      },
+      "warnings": null
+    },
+    {
+      "traceID": "060c8b7ad9a432d963ed80fb5afa09a1",
+      "spans": [
+        {
+          "traceID": "060c8b7ad9a432d963ed80fb5afa09a1",
+          "spanID": "f9f532adabbf1db1",
+          "operationName": "/api/traces",
+          "references": [],
+          "startTime": 1749809725502004,
+          "duration": 2465923,
+          "tags": [
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "http.flavor",
+              "type": "string",
+              "value": "1.1"
+            },
+            {
+              "key": "net.host.name",
+              "type": "string",
+              "value": "35.216.127.215"
+            },
+            {
+              "key": "net.host.port",
+              "type": "int64",
+              "value": 30168
+            },
+            {
+              "key": "net.sock.peer.addr",
+              "type": "string",
+              "value": "100.64.0.7"
+            },
+            {
+              "key": "net.sock.peer.port",
+              "type": "int64",
+              "value": 51417
+            },
+            {
+              "key": "http.user_agent",
+              "type": "string",
+              "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+            },
+            {
+              "key": "http.route",
+              "type": "string",
+              "value": "/api/traces"
+            },
+            {
+              "key": "http.wrote_bytes",
+              "type": "int64",
+              "value": 79890
+            },
+            {
+              "key": "http.status_code",
+              "type": "int64",
+              "value": 200
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": null
+        },
+        {
+          "traceID": "060c8b7ad9a432d963ed80fb5afa09a1",
+          "spanID": "a31eb22be1c07cb2",
+          "operationName": "FindTraces",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "060c8b7ad9a432d963ed80fb5afa09a1",
+              "spanID": "f9f532adabbf1db1"
+            }
+          ],
+          "startTime": 1749809725502049,
+          "duration": 2463286,
+          "tags": [
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "internal"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p2",
+          "warnings": null
+        },
+        {
+          "traceID": "060c8b7ad9a432d963ed80fb5afa09a1",
+          "spanID": "981be08a99e4d3b1",
+          "operationName": "FindTraceIDs",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "060c8b7ad9a432d963ed80fb5afa09a1",
+              "spanID": "a31eb22be1c07cb2"
+            }
+          ],
+          "startTime": 1749809725502050,
+          "duration": 2431676,
+          "tags": [
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "internal"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p2",
+          "warnings": null
+        },
+        {
+          "traceID": "060c8b7ad9a432d963ed80fb5afa09a1",
+          "spanID": "a2acd022c430fda4",
+          "operationName": "findTraceIDs",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "060c8b7ad9a432d963ed80fb5afa09a1",
+              "spanID": "981be08a99e4d3b1"
+            }
+          ],
+          "startTime": 1749809725502052,
+          "duration": 2431616,
+          "tags": [
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "internal"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p2",
+          "warnings": null
+        },
+        {
+          "traceID": "060c8b7ad9a432d963ed80fb5afa09a1",
+          "spanID": "348c4d1f4ad30390",
+          "operationName": "multiRead",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "060c8b7ad9a432d963ed80fb5afa09a1",
+              "spanID": "a31eb22be1c07cb2"
+            }
+          ],
+          "startTime": 1749809727933744,
+          "duration": 31572,
+          "tags": [
+            {
+              "key": "trace_ids",
+              "type": "string",
+              "value": "[\"0bbab34b4dac482098f585c19ea681a3\",\"3d805d37c5164bd483b34126cbfcbda3\",\"fa505fb9cafd4b88a85bce3412ab69d7\",\"3c93ad04667e4793b06482d1c5554821\",\"fb5ad2acc7724aa08a8778f674bd29a4\",\"fbb68361dc054985a535b199a40fea64\",\"a39a234d34e74a0abc90ac572c82ccdc\",\"3bfe6817344a4b9e9583712443e78fd8\",\"a1d4de9eee6b440991093c0b0e924c7e\",\"0b4955836f5549d59c2fd067813d4551\",\"4761faeb740341c797a26d6122d0c656\",\"f36e4b9c710543908b440400a8559286\",\"07f6825813584f41b5ed317d1255382a\",\"dc43ddfab089425ab6f8f1071d68fb3e\",\"6108d1e6e8fb4751bf7193b16628c756\",\"b5ed6012339a4813bd32ca0fa951fd46\",\"44b063d761a740a3adb5aa2963b340b2\",\"971dda3a54614cd0912a3576123b8328\",\"80fb9e7261904fa385598176bdb654ee\",\"d9c797f797d949259c143383d0589e15\"]"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "internal"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p2",
+          "warnings": null
+        }
+      ],
+      "processes": {
+        "p1": {
+          "serviceName": "jaeger-all-in-one",
+          "tags": [
+            {
+              "key": "host.name",
+              "type": "string",
+              "value": "jaeger-677d9dc8d7-7xgfz"
+            },
+            {
+              "key": "os.type",
+              "type": "string",
+              "value": "linux"
+            },
+            {
+              "key": "otel.library.name",
+              "type": "string",
+              "value": "go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp"
+            },
+            {
+              "key": "otel.library.version",
+              "type": "string",
+              "value": "0.46.1"
+            },
+            {
+              "key": "telemetry.sdk.language",
+              "type": "string",
+              "value": "go"
+            },
+            {
+              "key": "telemetry.sdk.name",
+              "type": "string",
+              "value": "opentelemetry"
+            },
+            {
+              "key": "telemetry.sdk.version",
+              "type": "string",
+              "value": "1.21.0"
+            }
+          ]
+        },
+        "p2": {
+          "serviceName": "jaeger-all-in-one",
+          "tags": [
+            {
+              "key": "host.name",
+              "type": "string",
+              "value": "jaeger-677d9dc8d7-7xgfz"
+            },
+            {
+              "key": "os.type",
+              "type": "string",
+              "value": "linux"
+            },
+            {
+              "key": "otel.library.name",
+              "type": "string",
+              "value": "esSpanStore.SpanReader"
+            },
+            {
+              "key": "telemetry.sdk.language",
+              "type": "string",
+              "value": "go"
+            },
+            {
+              "key": "telemetry.sdk.name",
+              "type": "string",
+              "value": "opentelemetry"
+            },
+            {
+              "key": "telemetry.sdk.version",
+              "type": "string",
+              "value": "1.21.0"
+            }
+          ]
+        }
+      },
+      "warnings": null
+    },
+    {
+      "traceID": "0f878dfd3ee9f1b00add0629c845f5fa",
+      "spans": [
+        {
+          "traceID": "0f878dfd3ee9f1b00add0629c845f5fa",
+          "spanID": "7a9d072a5f34a54d",
+          "operationName": "/api/services",
+          "references": [],
+          "startTime": 1749809769677074,
+          "duration": 882011,
+          "tags": [
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "http.flavor",
+              "type": "string",
+              "value": "1.1"
+            },
+            {
+              "key": "net.host.name",
+              "type": "string",
+              "value": "35.216.127.215"
+            },
+            {
+              "key": "net.host.port",
+              "type": "int64",
+              "value": 30168
+            },
+            {
+              "key": "net.sock.peer.addr",
+              "type": "string",
+              "value": "100.64.0.7"
+            },
+            {
+              "key": "net.sock.peer.port",
+              "type": "int64",
+              "value": 51437
+            },
+            {
+              "key": "http.user_agent",
+              "type": "string",
+              "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+            },
+            {
+              "key": "http.route",
+              "type": "string",
+              "value": "/api/services"
+            },
+            {
+              "key": "http.wrote_bytes",
+              "type": "int64",
+              "value": 263
+            },
+            {
+              "key": "http.status_code",
+              "type": "int64",
+              "value": 200
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": null
+        },
+        {
+          "traceID": "0f878dfd3ee9f1b00add0629c845f5fa",
+          "spanID": "2b9e16e35f9fdc2a",
+          "operationName": "GetService",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "0f878dfd3ee9f1b00add0629c845f5fa",
+              "spanID": "7a9d072a5f34a54d"
+            }
+          ],
+          "startTime": 1749809769677114,
+          "duration": 880815,
+          "tags": [
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "internal"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p2",
+          "warnings": null
+        }
+      ],
+      "processes": {
+        "p1": {
+          "serviceName": "jaeger-all-in-one",
+          "tags": [
+            {
+              "key": "host.name",
+              "type": "string",
+              "value": "jaeger-677d9dc8d7-7xgfz"
+            },
+            {
+              "key": "os.type",
+              "type": "string",
+              "value": "linux"
+            },
+            {
+              "key": "otel.library.name",
+              "type": "string",
+              "value": "go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp"
+            },
+            {
+              "key": "otel.library.version",
+              "type": "string",
+              "value": "0.46.1"
+            },
+            {
+              "key": "telemetry.sdk.language",
+              "type": "string",
+              "value": "go"
+            },
+            {
+              "key": "telemetry.sdk.name",
+              "type": "string",
+              "value": "opentelemetry"
+            },
+            {
+              "key": "telemetry.sdk.version",
+              "type": "string",
+              "value": "1.21.0"
+            }
+          ]
+        },
+        "p2": {
+          "serviceName": "jaeger-all-in-one",
+          "tags": [
+            {
+              "key": "host.name",
+              "type": "string",
+              "value": "jaeger-677d9dc8d7-7xgfz"
+            },
+            {
+              "key": "os.type",
+              "type": "string",
+              "value": "linux"
+            },
+            {
+              "key": "otel.library.name",
+              "type": "string",
+              "value": "esSpanStore.SpanReader"
+            },
+            {
+              "key": "telemetry.sdk.language",
+              "type": "string",
+              "value": "go"
+            },
+            {
+              "key": "telemetry.sdk.name",
+              "type": "string",
+              "value": "opentelemetry"
+            },
+            {
+              "key": "telemetry.sdk.version",
+              "type": "string",
+              "value": "1.21.0"
+            }
+          ]
+        }
+      },
+      "warnings": null
+    },
+    {
+      "traceID": "bd2ef6306f3cbd25384abc1e2ec60612",
+      "spans": [
+        {
+          "traceID": "bd2ef6306f3cbd25384abc1e2ec60612",
+          "spanID": "7c065df410f3213a",
+          "operationName": "/api/traces",
+          "references": [],
+          "startTime": 1749811579555986,
+          "duration": 199063,
+          "tags": [
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "http.flavor",
+              "type": "string",
+              "value": "1.1"
+            },
+            {
+              "key": "net.host.name",
+              "type": "string",
+              "value": "35.216.127.215"
+            },
+            {
+              "key": "net.host.port",
+              "type": "int64",
+              "value": 30168
+            },
+            {
+              "key": "net.sock.peer.addr",
+              "type": "string",
+              "value": "100.64.0.7"
+            },
+            {
+              "key": "net.sock.peer.port",
+              "type": "int64",
+              "value": 52402
+            },
+            {
+              "key": "http.user_agent",
+              "type": "string",
+              "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+            },
+            {
+              "key": "http.route",
+              "type": "string",
+              "value": "/api/traces"
+            },
+            {
+              "key": "http.wrote_bytes",
+              "type": "int64",
+              "value": 35623
+            },
+            {
+              "key": "http.status_code",
+              "type": "int64",
+              "value": 200
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": null
+        },
+        {
+          "traceID": "bd2ef6306f3cbd25384abc1e2ec60612",
+          "spanID": "36e628f43cf849e5",
+          "operationName": "FindTraces",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "bd2ef6306f3cbd25384abc1e2ec60612",
+              "spanID": "7c065df410f3213a"
+            }
+          ],
+          "startTime": 1749811579556020,
+          "duration": 197954,
+          "tags": [
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "internal"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p2",
+          "warnings": null
+        },
+        {
+          "traceID": "bd2ef6306f3cbd25384abc1e2ec60612",
+          "spanID": "b3e8cbef0b8c8756",
+          "operationName": "FindTraceIDs",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "bd2ef6306f3cbd25384abc1e2ec60612",
+              "spanID": "36e628f43cf849e5"
+            }
+          ],
+          "startTime": 1749811579556021,
+          "duration": 184289,
+          "tags": [
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "internal"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p2",
+          "warnings": null
+        },
+        {
+          "traceID": "bd2ef6306f3cbd25384abc1e2ec60612",
+          "spanID": "9c435be41f6a870a",
+          "operationName": "findTraceIDs",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "bd2ef6306f3cbd25384abc1e2ec60612",
+              "spanID": "b3e8cbef0b8c8756"
+            }
+          ],
+          "startTime": 1749811579556023,
+          "duration": 184273,
+          "tags": [
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "internal"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p2",
+          "warnings": null
+        },
+        {
+          "traceID": "bd2ef6306f3cbd25384abc1e2ec60612",
+          "spanID": "70511b5d68969eb5",
+          "operationName": "multiRead",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "bd2ef6306f3cbd25384abc1e2ec60612",
+              "spanID": "36e628f43cf849e5"
+            }
+          ],
+          "startTime": 1749811579740317,
+          "duration": 13632,
+          "tags": [
+            {
+              "key": "trace_ids",
+              "type": "string",
+              "value": "[\"6171ab39fa1c414ebde17572026d87cb\"]"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "internal"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p2",
+          "warnings": null
+        }
+      ],
+      "processes": {
+        "p1": {
+          "serviceName": "jaeger-all-in-one",
+          "tags": [
+            {
+              "key": "host.name",
+              "type": "string",
+              "value": "jaeger-677d9dc8d7-7xgfz"
+            },
+            {
+              "key": "os.type",
+              "type": "string",
+              "value": "linux"
+            },
+            {
+              "key": "otel.library.name",
+              "type": "string",
+              "value": "go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp"
+            },
+            {
+              "key": "otel.library.version",
+              "type": "string",
+              "value": "0.46.1"
+            },
+            {
+              "key": "telemetry.sdk.language",
+              "type": "string",
+              "value": "go"
+            },
+            {
+              "key": "telemetry.sdk.name",
+              "type": "string",
+              "value": "opentelemetry"
+            },
+            {
+              "key": "telemetry.sdk.version",
+              "type": "string",
+              "value": "1.21.0"
+            }
+          ]
+        },
+        "p2": {
+          "serviceName": "jaeger-all-in-one",
+          "tags": [
+            {
+              "key": "host.name",
+              "type": "string",
+              "value": "jaeger-677d9dc8d7-7xgfz"
+            },
+            {
+              "key": "os.type",
+              "type": "string",
+              "value": "linux"
+            },
+            {
+              "key": "otel.library.name",
+              "type": "string",
+              "value": "esSpanStore.SpanReader"
+            },
+            {
+              "key": "telemetry.sdk.language",
+              "type": "string",
+              "value": "go"
+            },
+            {
+              "key": "telemetry.sdk.name",
+              "type": "string",
+              "value": "opentelemetry"
+            },
+            {
+              "key": "telemetry.sdk.version",
+              "type": "string",
+              "value": "1.21.0"
+            }
+          ]
+        }
+      },
+      "warnings": null
+    },
+    {
+      "traceID": "1956d4305bc57182dacc5996edfd7ccb",
+      "spans": [
+        {
+          "traceID": "1956d4305bc57182dacc5996edfd7ccb",
+          "spanID": "0d532b340b570c6f",
+          "operationName": "/api/services/{service}/operations",
+          "references": [],
+          "startTime": 1749811576085515,
+          "duration": 1003275,
+          "tags": [
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "http.flavor",
+              "type": "string",
+              "value": "1.1"
+            },
+            {
+              "key": "net.host.name",
+              "type": "string",
+              "value": "35.216.127.215"
+            },
+            {
+              "key": "net.host.port",
+              "type": "int64",
+              "value": 30168
+            },
+            {
+              "key": "net.sock.peer.addr",
+              "type": "string",
+              "value": "100.64.0.7"
+            },
+            {
+              "key": "net.sock.peer.port",
+              "type": "int64",
+              "value": 52402
+            },
+            {
+              "key": "http.user_agent",
+              "type": "string",
+              "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+            },
+            {
+              "key": "http.route",
+              "type": "string",
+              "value": "/api/services/{service}/operations"
+            },
+            {
+              "key": "http.wrote_bytes",
+              "type": "int64",
+              "value": 8302
+            },
+            {
+              "key": "http.status_code",
+              "type": "int64",
+              "value": 200
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": null
+        },
+        {
+          "traceID": "1956d4305bc57182dacc5996edfd7ccb",
+          "spanID": "9a793e9784daec47",
+          "operationName": "GetOperations",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "1956d4305bc57182dacc5996edfd7ccb",
+              "spanID": "0d532b340b570c6f"
+            }
+          ],
+          "startTime": 1749811576085614,
+          "duration": 1002723,
+          "tags": [
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "internal"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p2",
+          "warnings": null
+        }
+      ],
+      "processes": {
+        "p1": {
+          "serviceName": "jaeger-all-in-one",
+          "tags": [
+            {
+              "key": "host.name",
+              "type": "string",
+              "value": "jaeger-677d9dc8d7-7xgfz"
+            },
+            {
+              "key": "os.type",
+              "type": "string",
+              "value": "linux"
+            },
+            {
+              "key": "otel.library.name",
+              "type": "string",
+              "value": "go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp"
+            },
+            {
+              "key": "otel.library.version",
+              "type": "string",
+              "value": "0.46.1"
+            },
+            {
+              "key": "telemetry.sdk.language",
+              "type": "string",
+              "value": "go"
+            },
+            {
+              "key": "telemetry.sdk.name",
+              "type": "string",
+              "value": "opentelemetry"
+            },
+            {
+              "key": "telemetry.sdk.version",
+              "type": "string",
+              "value": "1.21.0"
+            }
+          ]
+        },
+        "p2": {
+          "serviceName": "jaeger-all-in-one",
+          "tags": [
+            {
+              "key": "host.name",
+              "type": "string",
+              "value": "jaeger-677d9dc8d7-7xgfz"
+            },
+            {
+              "key": "os.type",
+              "type": "string",
+              "value": "linux"
+            },
+            {
+              "key": "otel.library.name",
+              "type": "string",
+              "value": "esSpanStore.SpanReader"
+            },
+            {
+              "key": "telemetry.sdk.language",
+              "type": "string",
+              "value": "go"
+            },
+            {
+              "key": "telemetry.sdk.name",
+              "type": "string",
+              "value": "opentelemetry"
+            },
+            {
+              "key": "telemetry.sdk.version",
+              "type": "string",
+              "value": "1.21.0"
+            }
+          ]
+        }
+      },
+      "warnings": null
+    },
+    {
+      "traceID": "a1c96cb1fa076a9a98a5eeb9bb9b67cd",
+      "spans": [
+        {
+          "traceID": "a1c96cb1fa076a9a98a5eeb9bb9b67cd",
+          "spanID": "bffa8a0561de0a0b",
+          "operationName": "/api/traces",
+          "references": [],
+          "startTime": 1749811569466871,
+          "duration": 3175351,
+          "tags": [
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "http.flavor",
+              "type": "string",
+              "value": "1.1"
+            },
+            {
+              "key": "net.host.name",
+              "type": "string",
+              "value": "35.216.127.215"
+            },
+            {
+              "key": "net.host.port",
+              "type": "int64",
+              "value": 30168
+            },
+            {
+              "key": "net.sock.peer.addr",
+              "type": "string",
+              "value": "100.64.0.7"
+            },
+            {
+              "key": "net.sock.peer.port",
+              "type": "int64",
+              "value": 52402
+            },
+            {
+              "key": "http.user_agent",
+              "type": "string",
+              "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+            },
+            {
+              "key": "http.route",
+              "type": "string",
+              "value": "/api/traces"
+            },
+            {
+              "key": "http.wrote_bytes",
+              "type": "int64",
+              "value": 19866
+            },
+            {
+              "key": "http.status_code",
+              "type": "int64",
+              "value": 200
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": null
+        },
+        {
+          "traceID": "a1c96cb1fa076a9a98a5eeb9bb9b67cd",
+          "spanID": "a6ea60e688068e89",
+          "operationName": "FindTraces",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "a1c96cb1fa076a9a98a5eeb9bb9b67cd",
+              "spanID": "bffa8a0561de0a0b"
+            }
+          ],
+          "startTime": 1749811569466942,
+          "duration": 3173714,
+          "tags": [
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "internal"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p2",
+          "warnings": null
+        },
+        {
+          "traceID": "a1c96cb1fa076a9a98a5eeb9bb9b67cd",
+          "spanID": "a0b08b74b356b006",
+          "operationName": "FindTraceIDs",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "a1c96cb1fa076a9a98a5eeb9bb9b67cd",
+              "spanID": "a6ea60e688068e89"
+            }
+          ],
+          "startTime": 1749811569466944,
+          "duration": 3157247,
+          "tags": [
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "internal"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p2",
+          "warnings": null
+        },
+        {
+          "traceID": "a1c96cb1fa076a9a98a5eeb9bb9b67cd",
+          "spanID": "803f9160b77b9fb7",
+          "operationName": "findTraceIDs",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "a1c96cb1fa076a9a98a5eeb9bb9b67cd",
+              "spanID": "a0b08b74b356b006"
+            }
+          ],
+          "startTime": 1749811569466946,
+          "duration": 3157228,
+          "tags": [
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "internal"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p2",
+          "warnings": null
+        },
+        {
+          "traceID": "a1c96cb1fa076a9a98a5eeb9bb9b67cd",
+          "spanID": "8d1950bdb0ecff33",
+          "operationName": "multiRead",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "a1c96cb1fa076a9a98a5eeb9bb9b67cd",
+              "spanID": "a6ea60e688068e89"
+            }
+          ],
+          "startTime": 1749811572624199,
+          "duration": 16436,
+          "tags": [
+            {
+              "key": "trace_ids",
+              "type": "string",
+              "value": "[\"db3521f98617489198632313e94fefdb\"]"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "internal"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p2",
+          "warnings": null
+        }
+      ],
+      "processes": {
+        "p1": {
+          "serviceName": "jaeger-all-in-one",
+          "tags": [
+            {
+              "key": "host.name",
+              "type": "string",
+              "value": "jaeger-677d9dc8d7-7xgfz"
+            },
+            {
+              "key": "os.type",
+              "type": "string",
+              "value": "linux"
+            },
+            {
+              "key": "otel.library.name",
+              "type": "string",
+              "value": "go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp"
+            },
+            {
+              "key": "otel.library.version",
+              "type": "string",
+              "value": "0.46.1"
+            },
+            {
+              "key": "telemetry.sdk.language",
+              "type": "string",
+              "value": "go"
+            },
+            {
+              "key": "telemetry.sdk.name",
+              "type": "string",
+              "value": "opentelemetry"
+            },
+            {
+              "key": "telemetry.sdk.version",
+              "type": "string",
+              "value": "1.21.0"
+            }
+          ]
+        },
+        "p2": {
+          "serviceName": "jaeger-all-in-one",
+          "tags": [
+            {
+              "key": "host.name",
+              "type": "string",
+              "value": "jaeger-677d9dc8d7-7xgfz"
+            },
+            {
+              "key": "os.type",
+              "type": "string",
+              "value": "linux"
+            },
+            {
+              "key": "otel.library.name",
+              "type": "string",
+              "value": "esSpanStore.SpanReader"
+            },
+            {
+              "key": "telemetry.sdk.language",
+              "type": "string",
+              "value": "go"
+            },
+            {
+              "key": "telemetry.sdk.name",
+              "type": "string",
+              "value": "opentelemetry"
+            },
+            {
+              "key": "telemetry.sdk.version",
+              "type": "string",
+              "value": "1.21.0"
+            }
+          ]
+        }
+      },
+      "warnings": null
+    },
+    {
+      "traceID": "459d5d3a9a50280aa067be423a17da13",
+      "spans": [
+        {
+          "traceID": "459d5d3a9a50280aa067be423a17da13",
+          "spanID": "c56ec143d635f9ed",
+          "operationName": "/api/traces",
+          "references": [],
+          "startTime": 1749809774620196,
+          "duration": 1254942,
+          "tags": [
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "http.flavor",
+              "type": "string",
+              "value": "1.1"
+            },
+            {
+              "key": "net.host.name",
+              "type": "string",
+              "value": "35.216.127.215"
+            },
+            {
+              "key": "net.host.port",
+              "type": "int64",
+              "value": 30168
+            },
+            {
+              "key": "net.sock.peer.addr",
+              "type": "string",
+              "value": "100.64.0.7"
+            },
+            {
+              "key": "net.sock.peer.port",
+              "type": "int64",
+              "value": 51417
+            },
+            {
+              "key": "http.user_agent",
+              "type": "string",
+              "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+            },
+            {
+              "key": "http.route",
+              "type": "string",
+              "value": "/api/traces"
+            },
+            {
+              "key": "http.wrote_bytes",
+              "type": "int64",
+              "value": 56
+            },
+            {
+              "key": "http.status_code",
+              "type": "int64",
+              "value": 200
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": null
+        },
+        {
+          "traceID": "459d5d3a9a50280aa067be423a17da13",
+          "spanID": "602ed0d8ca27a9bd",
+          "operationName": "FindTraces",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "459d5d3a9a50280aa067be423a17da13",
+              "spanID": "c56ec143d635f9ed"
+            }
+          ],
+          "startTime": 1749809774620235,
+          "duration": 1254574,
+          "tags": [
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "internal"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p2",
+          "warnings": null
+        },
+        {
+          "traceID": "459d5d3a9a50280aa067be423a17da13",
+          "spanID": "272b2ba2b6cd6af6",
+          "operationName": "FindTraceIDs",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "459d5d3a9a50280aa067be423a17da13",
+              "spanID": "602ed0d8ca27a9bd"
+            }
+          ],
+          "startTime": 1749809774620236,
+          "duration": 1254557,
+          "tags": [
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "internal"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p2",
+          "warnings": null
+        },
+        {
+          "traceID": "459d5d3a9a50280aa067be423a17da13",
+          "spanID": "7606143cb44386e3",
+          "operationName": "findTraceIDs",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "459d5d3a9a50280aa067be423a17da13",
+              "spanID": "272b2ba2b6cd6af6"
+            }
+          ],
+          "startTime": 1749809774620237,
+          "duration": 1254530,
+          "tags": [
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "internal"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p2",
+          "warnings": null
+        },
+        {
+          "traceID": "459d5d3a9a50280aa067be423a17da13",
+          "spanID": "d7fdfd27ab8a48ae",
+          "operationName": "multiRead",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "459d5d3a9a50280aa067be423a17da13",
+              "spanID": "602ed0d8ca27a9bd"
+            }
+          ],
+          "startTime": 1749809775874799,
+          "duration": 8,
+          "tags": [
+            {
+              "key": "trace_ids",
+              "type": "string",
+              "value": "[]"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "internal"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p2",
+          "warnings": null
+        }
+      ],
+      "processes": {
+        "p1": {
+          "serviceName": "jaeger-all-in-one",
+          "tags": [
+            {
+              "key": "host.name",
+              "type": "string",
+              "value": "jaeger-677d9dc8d7-7xgfz"
+            },
+            {
+              "key": "os.type",
+              "type": "string",
+              "value": "linux"
+            },
+            {
+              "key": "otel.library.name",
+              "type": "string",
+              "value": "go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp"
+            },
+            {
+              "key": "otel.library.version",
+              "type": "string",
+              "value": "0.46.1"
+            },
+            {
+              "key": "telemetry.sdk.language",
+              "type": "string",
+              "value": "go"
+            },
+            {
+              "key": "telemetry.sdk.name",
+              "type": "string",
+              "value": "opentelemetry"
+            },
+            {
+              "key": "telemetry.sdk.version",
+              "type": "string",
+              "value": "1.21.0"
+            }
+          ]
+        },
+        "p2": {
+          "serviceName": "jaeger-all-in-one",
+          "tags": [
+            {
+              "key": "host.name",
+              "type": "string",
+              "value": "jaeger-677d9dc8d7-7xgfz"
+            },
+            {
+              "key": "os.type",
+              "type": "string",
+              "value": "linux"
+            },
+            {
+              "key": "otel.library.name",
+              "type": "string",
+              "value": "esSpanStore.SpanReader"
+            },
+            {
+              "key": "telemetry.sdk.language",
+              "type": "string",
+              "value": "go"
+            },
+            {
+              "key": "telemetry.sdk.name",
+              "type": "string",
+              "value": "opentelemetry"
+            },
+            {
+              "key": "telemetry.sdk.version",
+              "type": "string",
+              "value": "1.21.0"
+            }
+          ]
+        }
+      },
+      "warnings": null
+    },
+    {
+      "traceID": "78123f63e6114c5401bc95e134274aef",
+      "spans": [
+        {
+          "traceID": "78123f63e6114c5401bc95e134274aef",
+          "spanID": "69c9de139bad77fb",
+          "operationName": "/api/services/{service}/operations",
+          "references": [],
+          "startTime": 1749809769665820,
+          "duration": 903293,
+          "tags": [
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "http.flavor",
+              "type": "string",
+              "value": "1.1"
+            },
+            {
+              "key": "net.host.name",
+              "type": "string",
+              "value": "35.216.127.215"
+            },
+            {
+              "key": "net.host.port",
+              "type": "int64",
+              "value": 30168
+            },
+            {
+              "key": "net.sock.peer.addr",
+              "type": "string",
+              "value": "100.64.0.7"
+            },
+            {
+              "key": "net.sock.peer.port",
+              "type": "int64",
+              "value": 51417
+            },
+            {
+              "key": "http.user_agent",
+              "type": "string",
+              "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36"
+            },
+            {
+              "key": "http.route",
+              "type": "string",
+              "value": "/api/services/{service}/operations"
+            },
+            {
+              "key": "http.wrote_bytes",
+              "type": "int64",
+              "value": 23014
+            },
+            {
+              "key": "http.status_code",
+              "type": "int64",
+              "value": 200
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": null
+        },
+        {
+          "traceID": "78123f63e6114c5401bc95e134274aef",
+          "spanID": "d58fe0d6da89b773",
+          "operationName": "GetOperations",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "78123f63e6114c5401bc95e134274aef",
+              "spanID": "69c9de139bad77fb"
+            }
+          ],
+          "startTime": 1749809769665866,
+          "duration": 902394,
+          "tags": [
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "internal"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p2",
+          "warnings": null
+        }
+      ],
+      "processes": {
+        "p1": {
+          "serviceName": "jaeger-all-in-one",
+          "tags": [
+            {
+              "key": "host.name",
+              "type": "string",
+              "value": "jaeger-677d9dc8d7-7xgfz"
+            },
+            {
+              "key": "os.type",
+              "type": "string",
+              "value": "linux"
+            },
+            {
+              "key": "otel.library.name",
+              "type": "string",
+              "value": "go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp"
+            },
+            {
+              "key": "otel.library.version",
+              "type": "string",
+              "value": "0.46.1"
+            },
+            {
+              "key": "telemetry.sdk.language",
+              "type": "string",
+              "value": "go"
+            },
+            {
+              "key": "telemetry.sdk.name",
+              "type": "string",
+              "value": "opentelemetry"
+            },
+            {
+              "key": "telemetry.sdk.version",
+              "type": "string",
+              "value": "1.21.0"
+            }
+          ]
+        },
+        "p2": {
+          "serviceName": "jaeger-all-in-one",
+          "tags": [
+            {
+              "key": "host.name",
+              "type": "string",
+              "value": "jaeger-677d9dc8d7-7xgfz"
+            },
+            {
+              "key": "os.type",
+              "type": "string",
+              "value": "linux"
+            },
+            {
+              "key": "otel.library.name",
+              "type": "string",
+              "value": "esSpanStore.SpanReader"
+            },
+            {
+              "key": "telemetry.sdk.language",
+              "type": "string",
+              "value": "go"
+            },
+            {
+              "key": "telemetry.sdk.name",
+              "type": "string",
+              "value": "opentelemetry"
+            },
+            {
+              "key": "telemetry.sdk.version",
+              "type": "string",
+              "value": "1.21.0"
+            }
+          ]
+        }
+      },
+      "warnings": null
+    }
+  ],
+  "total": 0,
+  "limit": 0,
+  "offset": 0,
+  "errors": null
+}

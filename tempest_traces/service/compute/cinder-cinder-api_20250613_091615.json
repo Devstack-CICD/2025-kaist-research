@@ -1,0 +1,3536 @@
+{
+  "data": [
+    {
+      "traceID": "98ea6fd9cfac488686acbada82c53c42",
+      "spans": [
+        {
+          "traceID": "98ea6fd9cfac488686acbada82c53c42",
+          "spanID": "8f0ddb67d229516a",
+          "operationName": "WSGI_GET_/v2.1/7ca55bd9f69c4fd9b9b38a5bf53f3b8e/os-volumes",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "98ea6fd9cfac488686acbada82c53c42",
+              "spanID": "86acbada82c53c42"
+            }
+          ],
+          "startTime": 1749804050291594,
+          "duration": 125199,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v2.1/7ca55bd9f69c4fd9b9b38a5bf53f3b8e/os-volumes"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": "limit=2"
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": [
+            "invalid parent span IDs=86acbada82c53c42; skipping clock skew adjustment"
+          ]
+        },
+        {
+          "traceID": "98ea6fd9cfac488686acbada82c53c42",
+          "spanID": "8918701f2773e28b",
+          "operationName": "WSGI_GET_/v3/7ca55bd9f69c4fd9b9b38a5bf53f3b8e/volumes/detail",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "98ea6fd9cfac488686acbada82c53c42",
+              "spanID": "8f0ddb67d229516a"
+            }
+          ],
+          "startTime": 1749804050332325,
+          "duration": 67224,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v3/7ca55bd9f69c4fd9b9b38a5bf53f3b8e/volumes/detail"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p2",
+          "warnings": null
+        }
+      ],
+      "processes": {
+        "p1": {
+          "serviceName": "nova-osapi_compute",
+          "tags": [
+            {
+              "key": "otel.library.name",
+              "type": "string",
+              "value": "osprofiler.drivers.otlp"
+            }
+          ]
+        },
+        "p2": {
+          "serviceName": "cinder-cinder-api",
+          "tags": [
+            {
+              "key": "otel.library.name",
+              "type": "string",
+              "value": "osprofiler.drivers.otlp"
+            }
+          ]
+        }
+      },
+      "warnings": null
+    },
+    {
+      "traceID": "d777ad3122f2489b92074b0699d4bb58",
+      "spans": [
+        {
+          "traceID": "d777ad3122f2489b92074b0699d4bb58",
+          "spanID": "a106b9ab96d4bbff",
+          "operationName": "WSGI_DELETE_/v2.1/638d32509a4c4b06a68e702d28816a71/os-volumes/63f0c9df-3373-4593-b05f-11e4be37d421",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "d777ad3122f2489b92074b0699d4bb58",
+              "spanID": "92074b0699d4bb58"
+            }
+          ],
+          "startTime": 1749804001342248,
+          "duration": 253114,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v2.1/638d32509a4c4b06a68e702d28816a71/os-volumes/63f0c9df-3373-4593-b05f-11e4be37d421"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "DELETE"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": [
+            "invalid parent span IDs=92074b0699d4bb58; skipping clock skew adjustment"
+          ]
+        },
+        {
+          "traceID": "d777ad3122f2489b92074b0699d4bb58",
+          "spanID": "bde33723586736af",
+          "operationName": "WSGI_DELETE_/v3/638d32509a4c4b06a68e702d28816a71/volumes/63f0c9df-3373-4593-b05f-11e4be37d421",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "d777ad3122f2489b92074b0699d4bb58",
+              "spanID": "a106b9ab96d4bbff"
+            }
+          ],
+          "startTime": 1749804001473286,
+          "duration": 96824,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v3/638d32509a4c4b06a68e702d28816a71/volumes/63f0c9df-3373-4593-b05f-11e4be37d421"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "DELETE"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p2",
+          "warnings": null
+        }
+      ],
+      "processes": {
+        "p1": {
+          "serviceName": "nova-osapi_compute",
+          "tags": [
+            {
+              "key": "otel.library.name",
+              "type": "string",
+              "value": "osprofiler.drivers.otlp"
+            }
+          ]
+        },
+        "p2": {
+          "serviceName": "cinder-cinder-api",
+          "tags": [
+            {
+              "key": "otel.library.name",
+              "type": "string",
+              "value": "osprofiler.drivers.otlp"
+            }
+          ]
+        }
+      },
+      "warnings": null
+    },
+    {
+      "traceID": "e7b6ca2d76ab40bdb6e9f2df11132993",
+      "spans": [
+        {
+          "traceID": "e7b6ca2d76ab40bdb6e9f2df11132993",
+          "spanID": "98e33f8970587edc",
+          "operationName": "WSGI_DELETE_/v2.1/638d32509a4c4b06a68e702d28816a71/os-volumes/tempest-invalid-826399095",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "e7b6ca2d76ab40bdb6e9f2df11132993",
+              "spanID": "b6e9f2df11132993"
+            }
+          ],
+          "startTime": 1749803999959886,
+          "duration": 1232029,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v2.1/638d32509a4c4b06a68e702d28816a71/os-volumes/tempest-invalid-826399095"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "DELETE"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": [
+            "invalid parent span IDs=b6e9f2df11132993; skipping clock skew adjustment"
+          ]
+        },
+        {
+          "traceID": "e7b6ca2d76ab40bdb6e9f2df11132993",
+          "spanID": "94b01f713b4ae24a",
+          "operationName": "WSGI_DELETE_/v3/638d32509a4c4b06a68e702d28816a71/volumes/tempest-invalid-826399095",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "e7b6ca2d76ab40bdb6e9f2df11132993",
+              "spanID": "98e33f8970587edc"
+            }
+          ],
+          "startTime": 1749804000039548,
+          "duration": 1105660,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v3/638d32509a4c4b06a68e702d28816a71/volumes/tempest-invalid-826399095"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "DELETE"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p2",
+          "warnings": null
+        },
+        {
+          "traceID": "e7b6ca2d76ab40bdb6e9f2df11132993",
+          "spanID": "a00f9c3f1cc34e17",
+          "operationName": "WSGI_GET_/v3/auth/tokens",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "e7b6ca2d76ab40bdb6e9f2df11132993",
+              "spanID": "94b01f713b4ae24a"
+            }
+          ],
+          "startTime": 1749804000077542,
+          "duration": 980072,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v3/auth/tokens"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p3",
+          "warnings": null
+        }
+      ],
+      "processes": {
+        "p1": {
+          "serviceName": "nova-osapi_compute",
+          "tags": [
+            {
+              "key": "otel.library.name",
+              "type": "string",
+              "value": "osprofiler.drivers.otlp"
+            }
+          ]
+        },
+        "p2": {
+          "serviceName": "cinder-cinder-api",
+          "tags": [
+            {
+              "key": "otel.library.name",
+              "type": "string",
+              "value": "osprofiler.drivers.otlp"
+            }
+          ]
+        },
+        "p3": {
+          "serviceName": "keystone-public",
+          "tags": [
+            {
+              "key": "otel.library.name",
+              "type": "string",
+              "value": "osprofiler.drivers.otlp"
+            }
+          ]
+        }
+      },
+      "warnings": null
+    },
+    {
+      "traceID": "ae08bb23a8a1464f9ee137beba540aa8",
+      "spans": [
+        {
+          "traceID": "ae08bb23a8a1464f9ee137beba540aa8",
+          "spanID": "8daa99eb356fd45b",
+          "operationName": "WSGI_GET_/v2.1/638d32509a4c4b06a68e702d28816a71/os-volumes/8e651610-d042-4ada-a8f9-4b1af45a985e",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "ae08bb23a8a1464f9ee137beba540aa8",
+              "spanID": "9ee137beba540aa8"
+            }
+          ],
+          "startTime": 1749804001609366,
+          "duration": 231684,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v2.1/638d32509a4c4b06a68e702d28816a71/os-volumes/8e651610-d042-4ada-a8f9-4b1af45a985e"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": [
+            "invalid parent span IDs=9ee137beba540aa8; skipping clock skew adjustment"
+          ]
+        },
+        {
+          "traceID": "ae08bb23a8a1464f9ee137beba540aa8",
+          "spanID": "82bf8b3d95b69127",
+          "operationName": "WSGI_GET_/v3/638d32509a4c4b06a68e702d28816a71/volumes/8e651610-d042-4ada-a8f9-4b1af45a985e",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "ae08bb23a8a1464f9ee137beba540aa8",
+              "spanID": "8daa99eb356fd45b"
+            }
+          ],
+          "startTime": 1749804001734181,
+          "duration": 75519,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v3/638d32509a4c4b06a68e702d28816a71/volumes/8e651610-d042-4ada-a8f9-4b1af45a985e"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p2",
+          "warnings": null
+        }
+      ],
+      "processes": {
+        "p1": {
+          "serviceName": "nova-osapi_compute",
+          "tags": [
+            {
+              "key": "otel.library.name",
+              "type": "string",
+              "value": "osprofiler.drivers.otlp"
+            }
+          ]
+        },
+        "p2": {
+          "serviceName": "cinder-cinder-api",
+          "tags": [
+            {
+              "key": "otel.library.name",
+              "type": "string",
+              "value": "osprofiler.drivers.otlp"
+            }
+          ]
+        }
+      },
+      "warnings": null
+    },
+    {
+      "traceID": "a9e2e4fc68da4e808f831c596568fef7",
+      "spans": [
+        {
+          "traceID": "a9e2e4fc68da4e808f831c596568fef7",
+          "spanID": "807a727c47569650",
+          "operationName": "WSGI_POST_/v2.1/97402685f6db4d6f9198300dcee5e7d0/os-volumes",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "a9e2e4fc68da4e808f831c596568fef7",
+              "spanID": "8f831c596568fef7"
+            }
+          ],
+          "startTime": 1749803872366076,
+          "duration": 1256582,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v2.1/97402685f6db4d6f9198300dcee5e7d0/os-volumes"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "POST"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": [
+            "invalid parent span IDs=8f831c596568fef7; skipping clock skew adjustment"
+          ]
+        },
+        {
+          "traceID": "a9e2e4fc68da4e808f831c596568fef7",
+          "spanID": "9605dc0e5ceb79a4",
+          "operationName": "WSGI_GET_/v3/auth/tokens",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "a9e2e4fc68da4e808f831c596568fef7",
+              "spanID": "807a727c47569650"
+            }
+          ],
+          "startTime": 1749803872408409,
+          "duration": 281447,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v3/auth/tokens"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p2",
+          "warnings": null
+        },
+        {
+          "traceID": "a9e2e4fc68da4e808f831c596568fef7",
+          "spanID": "b9a8ef361470fa7a",
+          "operationName": "WSGI_POST_/v3/97402685f6db4d6f9198300dcee5e7d0/volumes",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "a9e2e4fc68da4e808f831c596568fef7",
+              "spanID": "807a727c47569650"
+            }
+          ],
+          "startTime": 1749803872755417,
+          "duration": 745094,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v3/97402685f6db4d6f9198300dcee5e7d0/volumes"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "POST"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p3",
+          "warnings": null
+        },
+        {
+          "traceID": "a9e2e4fc68da4e808f831c596568fef7",
+          "spanID": "888a55e4dcdac5c1",
+          "operationName": "WSGI_GET_/v3/auth/tokens",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "a9e2e4fc68da4e808f831c596568fef7",
+              "spanID": "b9a8ef361470fa7a"
+            }
+          ],
+          "startTime": 1749803872789389,
+          "duration": 272245,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v3/auth/tokens"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p2",
+          "warnings": null
+        },
+        {
+          "traceID": "a9e2e4fc68da4e808f831c596568fef7",
+          "spanID": "87e381ca8fa5c739",
+          "operationName": "rpc",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "a9e2e4fc68da4e808f831c596568fef7",
+              "spanID": "b9a8ef361470fa7a"
+            }
+          ],
+          "startTime": 1749803873483473,
+          "duration": 109054,
+          "tags": [
+            {
+              "key": "args",
+              "type": "string",
+              "value": "(<cinder.scheduler.manager.SchedulerManager object at 0x7f05eebfa5c0>, <cinder.context.RequestContext object at 0x7f05e9c641f0>)"
+            },
+            {
+              "key": "kwargs",
+              "type": "string",
+              "value": "{'snapshot_id': None, 'image_id': None, 'request_spec': RequestSpec(CG_backend=<?>,availability_zones=['az1'],backup_id=None,cgsnapshot_id=None,consistencygroup_id=None,group_backend=<?>,group_id=None,image_id=None,operation=<?>,resource_backend=<?>,snapshot_id=None,source_replicaid=<?>,source_volid=None,volume=Volume(adf76dc8-707f-4fe8-80f6-4b068b0a4fe4),volume_id=adf76dc8-707f-4fe8-80f6-4b068b0a4fe4,volume_properties=VolumeProperties,volume_type=VolumeType(c49c4710-bd22-49f3-a996-6674d2a72f1e)), 'filter_properties': {}, 'volume': Volume(_name_id=None,admin_metadata={},attach_status='detached',availability_zone='az1',bootable=False,cluster=<?>,cluster_name=None,consistencygroup=<?>,consistencygroup_id=None,created_at=2025-06-13T08:37:53Z,deleted=False,deleted_at=None,display_description=None,display_name='tempest-VolumesGetTestJSON-Volume-1689891773',ec2_id=None,encryption_key_id=None,glance_metadata=<?>,group=<?>,group_id=None,host=None,id=adf76dc8-707f-4fe8-80f6-4b068b0a4fe4,launched_at=None,metadata={Type='work'},migration_status=None,multiattach=False,previous_status=None,project_id='97402685f6db4d6f9198300dcee5e7d0',provider_auth=None,provider_geometry=None,provider_id=None,provider_location=None,replication_driver_data=None,replication_extended_status=None,replication_status=None,scheduled_at=None,service_uuid=None,shared_targets=True,size=1,snapshot_id=None,snapshots=<?>,source_volid=None,status='creating',terminated_at=None,updated_at=None,use_quota=True,user_id='32289b0afb2d4fbbbfdf31e25910f54c',volume_attachment=VolumeAttachmentList,volume_type=VolumeType(c49c4710-bd22-49f3-a996-6674d2a72f1e),volume_type_id=c49c4710-bd22-49f3-a996-6674d2a72f1e), 'backup_id': None}"
+            },
+            {
+              "key": "name",
+              "type": "string",
+              "value": "cinder.scheduler.manager.SchedulerManager.create_volume"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "internal"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p4",
+          "warnings": [
+            "clock skew adjustment disabled; not applying calculated delta of -410.036ms"
+          ]
+        },
+        {
+          "traceID": "a9e2e4fc68da4e808f831c596568fef7",
+          "spanID": "a90e6fc93c351ec4",
+          "operationName": "WSGI_GET_/v3/97402685f6db4d6f9198300dcee5e7d0/volumes/adf76dc8-707f-4fe8-80f6-4b068b0a4fe4",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "a9e2e4fc68da4e808f831c596568fef7",
+              "spanID": "807a727c47569650"
+            }
+          ],
+          "startTime": 1749803873510454,
+          "duration": 89859,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v3/97402685f6db4d6f9198300dcee5e7d0/volumes/adf76dc8-707f-4fe8-80f6-4b068b0a4fe4"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p3",
+          "warnings": null
+        },
+        {
+          "traceID": "a9e2e4fc68da4e808f831c596568fef7",
+          "spanID": "ad08e79a7bef1cc2",
+          "operationName": "WSGI_GET_/v2.1/97402685f6db4d6f9198300dcee5e7d0/os-volumes/adf76dc8-707f-4fe8-80f6-4b068b0a4fe4",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "a9e2e4fc68da4e808f831c596568fef7",
+              "spanID": "8f831c596568fef7"
+            }
+          ],
+          "startTime": 1749803873635400,
+          "duration": 123173,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v2.1/97402685f6db4d6f9198300dcee5e7d0/os-volumes/adf76dc8-707f-4fe8-80f6-4b068b0a4fe4"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": [
+            "invalid parent span IDs=8f831c596568fef7; skipping clock skew adjustment"
+          ]
+        },
+        {
+          "traceID": "a9e2e4fc68da4e808f831c596568fef7",
+          "spanID": "9822bec97cd821d8",
+          "operationName": "WSGI_GET_/v3/97402685f6db4d6f9198300dcee5e7d0/volumes/adf76dc8-707f-4fe8-80f6-4b068b0a4fe4",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "a9e2e4fc68da4e808f831c596568fef7",
+              "spanID": "ad08e79a7bef1cc2"
+            }
+          ],
+          "startTime": 1749803873662535,
+          "duration": 81156,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v3/97402685f6db4d6f9198300dcee5e7d0/volumes/adf76dc8-707f-4fe8-80f6-4b068b0a4fe4"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p3",
+          "warnings": null
+        },
+        {
+          "traceID": "a9e2e4fc68da4e808f831c596568fef7",
+          "spanID": "a31eb59b0cf0bae8",
+          "operationName": "WSGI_GET_/v2.1/97402685f6db4d6f9198300dcee5e7d0/os-volumes/adf76dc8-707f-4fe8-80f6-4b068b0a4fe4",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "a9e2e4fc68da4e808f831c596568fef7",
+              "spanID": "8f831c596568fef7"
+            }
+          ],
+          "startTime": 1749803874771689,
+          "duration": 131378,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v2.1/97402685f6db4d6f9198300dcee5e7d0/os-volumes/adf76dc8-707f-4fe8-80f6-4b068b0a4fe4"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": [
+            "invalid parent span IDs=8f831c596568fef7; skipping clock skew adjustment"
+          ]
+        },
+        {
+          "traceID": "a9e2e4fc68da4e808f831c596568fef7",
+          "spanID": "828ac34b6a055d75",
+          "operationName": "WSGI_GET_/v3/97402685f6db4d6f9198300dcee5e7d0/volumes/adf76dc8-707f-4fe8-80f6-4b068b0a4fe4",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "a9e2e4fc68da4e808f831c596568fef7",
+              "spanID": "a31eb59b0cf0bae8"
+            }
+          ],
+          "startTime": 1749803874821339,
+          "duration": 64601,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v3/97402685f6db4d6f9198300dcee5e7d0/volumes/adf76dc8-707f-4fe8-80f6-4b068b0a4fe4"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p3",
+          "warnings": null
+        },
+        {
+          "traceID": "a9e2e4fc68da4e808f831c596568fef7",
+          "spanID": "80568c2d89f2a370",
+          "operationName": "WSGI_GET_/v2.1/97402685f6db4d6f9198300dcee5e7d0/os-volumes/adf76dc8-707f-4fe8-80f6-4b068b0a4fe4",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "a9e2e4fc68da4e808f831c596568fef7",
+              "spanID": "8f831c596568fef7"
+            }
+          ],
+          "startTime": 1749803874915220,
+          "duration": 219130,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v2.1/97402685f6db4d6f9198300dcee5e7d0/os-volumes/adf76dc8-707f-4fe8-80f6-4b068b0a4fe4"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": [
+            "invalid parent span IDs=8f831c596568fef7; skipping clock skew adjustment"
+          ]
+        },
+        {
+          "traceID": "a9e2e4fc68da4e808f831c596568fef7",
+          "spanID": "a201b445affc2e8f",
+          "operationName": "WSGI_GET_/v3/97402685f6db4d6f9198300dcee5e7d0/volumes/adf76dc8-707f-4fe8-80f6-4b068b0a4fe4",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "a9e2e4fc68da4e808f831c596568fef7",
+              "spanID": "80568c2d89f2a370"
+            }
+          ],
+          "startTime": 1749803874971212,
+          "duration": 147519,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v3/97402685f6db4d6f9198300dcee5e7d0/volumes/adf76dc8-707f-4fe8-80f6-4b068b0a4fe4"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p3",
+          "warnings": null
+        },
+        {
+          "traceID": "a9e2e4fc68da4e808f831c596568fef7",
+          "spanID": "aa556003a58da280",
+          "operationName": "WSGI_GET_/v3/auth/tokens",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "a9e2e4fc68da4e808f831c596568fef7",
+              "spanID": "a201b445affc2e8f"
+            }
+          ],
+          "startTime": 1749803874984054,
+          "duration": 55585,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v3/auth/tokens"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p2",
+          "warnings": null
+        }
+      ],
+      "processes": {
+        "p1": {
+          "serviceName": "nova-osapi_compute",
+          "tags": [
+            {
+              "key": "otel.library.name",
+              "type": "string",
+              "value": "osprofiler.drivers.otlp"
+            }
+          ]
+        },
+        "p2": {
+          "serviceName": "keystone-public",
+          "tags": [
+            {
+              "key": "otel.library.name",
+              "type": "string",
+              "value": "osprofiler.drivers.otlp"
+            }
+          ]
+        },
+        "p3": {
+          "serviceName": "cinder-cinder-api",
+          "tags": [
+            {
+              "key": "otel.library.name",
+              "type": "string",
+              "value": "osprofiler.drivers.otlp"
+            }
+          ]
+        },
+        "p4": {
+          "serviceName": "cinder-cinder-scheduler",
+          "tags": [
+            {
+              "key": "otel.library.name",
+              "type": "string",
+              "value": "osprofiler.drivers.otlp"
+            }
+          ]
+        }
+      },
+      "warnings": null
+    },
+    {
+      "traceID": "c442ddd0a72b4898905cae3c33e11319",
+      "spans": [
+        {
+          "traceID": "c442ddd0a72b4898905cae3c33e11319",
+          "spanID": "ab9ec0152ee4aff2",
+          "operationName": "WSGI_POST_/v2.1/806cb07e117d4c08ad81486fa3479b8b/os-volumes",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "c442ddd0a72b4898905cae3c33e11319",
+              "spanID": "905cae3c33e11319"
+            }
+          ],
+          "startTime": 1749803743682200,
+          "duration": 792579,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v2.1/806cb07e117d4c08ad81486fa3479b8b/os-volumes"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "POST"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": [
+            "invalid parent span IDs=905cae3c33e11319; skipping clock skew adjustment"
+          ]
+        },
+        {
+          "traceID": "c442ddd0a72b4898905cae3c33e11319",
+          "spanID": "a134828ed3b55d14",
+          "operationName": "WSGI_GET_/v3/auth/tokens",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "c442ddd0a72b4898905cae3c33e11319",
+              "spanID": "ab9ec0152ee4aff2"
+            }
+          ],
+          "startTime": 1749803743710883,
+          "duration": 205898,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v3/auth/tokens"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p2",
+          "warnings": null
+        },
+        {
+          "traceID": "c442ddd0a72b4898905cae3c33e11319",
+          "spanID": "a9177ccd67ee8fa4",
+          "operationName": "WSGI_POST_/v3/806cb07e117d4c08ad81486fa3479b8b/volumes",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "c442ddd0a72b4898905cae3c33e11319",
+              "spanID": "ab9ec0152ee4aff2"
+            }
+          ],
+          "startTime": 1749803743989774,
+          "duration": 377009,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v3/806cb07e117d4c08ad81486fa3479b8b/volumes"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "POST"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p3",
+          "warnings": null
+        },
+        {
+          "traceID": "c442ddd0a72b4898905cae3c33e11319",
+          "spanID": "948fa1e4fa7efdc7",
+          "operationName": "rpc",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "c442ddd0a72b4898905cae3c33e11319",
+              "spanID": "a9177ccd67ee8fa4"
+            }
+          ],
+          "startTime": 1749803744348695,
+          "duration": 93238,
+          "tags": [
+            {
+              "key": "args",
+              "type": "string",
+              "value": "(<cinder.scheduler.manager.SchedulerManager object at 0x7f05eebfa5c0>, <cinder.context.RequestContext object at 0x7f05e9b30490>)"
+            },
+            {
+              "key": "kwargs",
+              "type": "string",
+              "value": "{'snapshot_id': None, 'image_id': None, 'request_spec': RequestSpec(CG_backend=<?>,availability_zones=['az1'],backup_id=None,cgsnapshot_id=None,consistencygroup_id=None,group_backend=<?>,group_id=None,image_id=None,operation=<?>,resource_backend=<?>,snapshot_id=None,source_replicaid=<?>,source_volid=None,volume=Volume(76d14c76-9b45-4860-ae3f-f0441d15c448),volume_id=76d14c76-9b45-4860-ae3f-f0441d15c448,volume_properties=VolumeProperties,volume_type=VolumeType(c49c4710-bd22-49f3-a996-6674d2a72f1e)), 'filter_properties': {}, 'volume': Volume(_name_id=None,admin_metadata={},attach_status='detached',availability_zone='az1',bootable=False,cluster=<?>,cluster_name=None,consistencygroup=<?>,consistencygroup_id=None,created_at=2025-06-13T08:35:44Z,deleted=False,deleted_at=None,display_description=None,display_name='tempest-VolumesSnapshotsTestJSON-volume-1878145904',ec2_id=None,encryption_key_id=None,glance_metadata=<?>,group=<?>,group_id=None,host=None,id=76d14c76-9b45-4860-ae3f-f0441d15c448,launched_at=None,metadata={},migration_status=None,multiattach=False,previous_status=None,project_id='806cb07e117d4c08ad81486fa3479b8b',provider_auth=None,provider_geometry=None,provider_id=None,provider_location=None,replication_driver_data=None,replication_extended_status=None,replication_status=None,scheduled_at=None,service_uuid=None,shared_targets=True,size=1,snapshot_id=None,snapshots=<?>,source_volid=None,status='creating',terminated_at=None,updated_at=None,use_quota=True,user_id='1f8b2b691e9d4c519c5c0bcaea3259d3',volume_attachment=VolumeAttachmentList,volume_type=VolumeType(c49c4710-bd22-49f3-a996-6674d2a72f1e),volume_type_id=c49c4710-bd22-49f3-a996-6674d2a72f1e), 'backup_id': None}"
+            },
+            {
+              "key": "name",
+              "type": "string",
+              "value": "cinder.scheduler.manager.SchedulerManager.create_volume"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "internal"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p4",
+          "warnings": [
+            "clock skew adjustment disabled; not applying calculated delta of -217.0355ms"
+          ]
+        },
+        {
+          "traceID": "c442ddd0a72b4898905cae3c33e11319",
+          "spanID": "b143fceec99cbcdd",
+          "operationName": "WSGI_GET_/v3/806cb07e117d4c08ad81486fa3479b8b/volumes/76d14c76-9b45-4860-ae3f-f0441d15c448",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "c442ddd0a72b4898905cae3c33e11319",
+              "spanID": "ab9ec0152ee4aff2"
+            }
+          ],
+          "startTime": 1749803744375202,
+          "duration": 84891,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v3/806cb07e117d4c08ad81486fa3479b8b/volumes/76d14c76-9b45-4860-ae3f-f0441d15c448"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p3",
+          "warnings": null
+        },
+        {
+          "traceID": "c442ddd0a72b4898905cae3c33e11319",
+          "spanID": "90fa1ed5f9e7bf8a",
+          "operationName": "WSGI_GET_/v2.1/806cb07e117d4c08ad81486fa3479b8b/os-volumes/76d14c76-9b45-4860-ae3f-f0441d15c448",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "c442ddd0a72b4898905cae3c33e11319",
+              "spanID": "905cae3c33e11319"
+            }
+          ],
+          "startTime": 1749803744486400,
+          "duration": 115744,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v2.1/806cb07e117d4c08ad81486fa3479b8b/os-volumes/76d14c76-9b45-4860-ae3f-f0441d15c448"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": [
+            "invalid parent span IDs=905cae3c33e11319; skipping clock skew adjustment"
+          ]
+        },
+        {
+          "traceID": "c442ddd0a72b4898905cae3c33e11319",
+          "spanID": "b0e9efd7f099bb5b",
+          "operationName": "WSGI_GET_/v3/806cb07e117d4c08ad81486fa3479b8b/volumes/76d14c76-9b45-4860-ae3f-f0441d15c448",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "c442ddd0a72b4898905cae3c33e11319",
+              "spanID": "90fa1ed5f9e7bf8a"
+            }
+          ],
+          "startTime": 1749803744515846,
+          "duration": 67985,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v3/806cb07e117d4c08ad81486fa3479b8b/volumes/76d14c76-9b45-4860-ae3f-f0441d15c448"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p3",
+          "warnings": null
+        },
+        {
+          "traceID": "c442ddd0a72b4898905cae3c33e11319",
+          "spanID": "b85cbef1c287191f",
+          "operationName": "WSGI_GET_/v2.1/806cb07e117d4c08ad81486fa3479b8b/os-volumes/76d14c76-9b45-4860-ae3f-f0441d15c448",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "c442ddd0a72b4898905cae3c33e11319",
+              "spanID": "905cae3c33e11319"
+            }
+          ],
+          "startTime": 1749803745614247,
+          "duration": 130808,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v2.1/806cb07e117d4c08ad81486fa3479b8b/os-volumes/76d14c76-9b45-4860-ae3f-f0441d15c448"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": [
+            "invalid parent span IDs=905cae3c33e11319; skipping clock skew adjustment"
+          ]
+        },
+        {
+          "traceID": "c442ddd0a72b4898905cae3c33e11319",
+          "spanID": "8df641d434524be4",
+          "operationName": "WSGI_GET_/v3/806cb07e117d4c08ad81486fa3479b8b/volumes/76d14c76-9b45-4860-ae3f-f0441d15c448",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "c442ddd0a72b4898905cae3c33e11319",
+              "spanID": "b85cbef1c287191f"
+            }
+          ],
+          "startTime": 1749803745643257,
+          "duration": 85281,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v3/806cb07e117d4c08ad81486fa3479b8b/volumes/76d14c76-9b45-4860-ae3f-f0441d15c448"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p3",
+          "warnings": null
+        },
+        {
+          "traceID": "c442ddd0a72b4898905cae3c33e11319",
+          "spanID": "823018259926ee66",
+          "operationName": "WSGI_POST_/v2.1/806cb07e117d4c08ad81486fa3479b8b/os-snapshots",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "c442ddd0a72b4898905cae3c33e11319",
+              "spanID": "905cae3c33e11319"
+            }
+          ],
+          "startTime": 1749803745757383,
+          "duration": 321233,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v2.1/806cb07e117d4c08ad81486fa3479b8b/os-snapshots"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "POST"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": [
+            "invalid parent span IDs=905cae3c33e11319; skipping clock skew adjustment"
+          ]
+        },
+        {
+          "traceID": "c442ddd0a72b4898905cae3c33e11319",
+          "spanID": "a779e6be721fd28d",
+          "operationName": "WSGI_POST_/v3/806cb07e117d4c08ad81486fa3479b8b/snapshots",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "c442ddd0a72b4898905cae3c33e11319",
+              "spanID": "823018259926ee66"
+            }
+          ],
+          "startTime": 1749803745814565,
+          "duration": 237172,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v3/806cb07e117d4c08ad81486fa3479b8b/snapshots"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "POST"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p3",
+          "warnings": null
+        },
+        {
+          "traceID": "c442ddd0a72b4898905cae3c33e11319",
+          "spanID": "a87f033b56c3c2f0",
+          "operationName": "rpc",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "c442ddd0a72b4898905cae3c33e11319",
+              "spanID": "a779e6be721fd28d"
+            }
+          ],
+          "startTime": 1749803746033649,
+          "duration": 34445,
+          "tags": [
+            {
+              "key": "args",
+              "type": "string",
+              "value": "(<cinder.scheduler.manager.SchedulerManager object at 0x7f05eebfa5c0>, <cinder.context.RequestContext object at 0x7f05e99981c0>)"
+            },
+            {
+              "key": "kwargs",
+              "type": "string",
+              "value": "{'request_spec': RequestSpec(CG_backend=<?>,availability_zones=<?>,backup_id=<?>,cgsnapshot_id=<?>,consistencygroup_id=<?>,group_backend=<?>,group_id=<?>,image_id=<?>,operation=<?>,resource_backend=<?>,snapshot_id=c1485c16-ea78-4650-bda0-b1361829df32,source_replicaid=<?>,source_volid=<?>,volume=<?>,volume_id=<?>,volume_properties=VolumeProperties,volume_type=<?>), 'filter_properties': None, 'volume': Volume(_name_id=None,admin_metadata={},attach_status='detached',availability_zone='az1',bootable=False,cluster=<?>,cluster_name=None,consistencygroup=<?>,consistencygroup_id=None,created_at=2025-06-13T08:35:44Z,deleted=False,deleted_at=None,display_description=None,display_name='tempest-VolumesSnapshotsTestJSON-volume-1878145904',ec2_id=None,encryption_key_id=None,glance_metadata=<?>,group=<?>,group_id=None,host='cinder-volume-worker@RBD#rbddriver',id=76d14c76-9b45-4860-ae3f-f0441d15c448,launched_at=2025-06-13T08:35:44Z,metadata={},migration_status=None,multiattach=False,previous_status=None,project_id='806cb07e117d4c08ad81486fa3479b8b',provider_auth=None,provider_geometry=None,provider_id=None,provider_location=None,replication_driver_data=None,replication_extended_status=None,replication_status=None,scheduled_at=2025-06-13T08:35:44Z,service_uuid='d26ef383-428b-46dc-9fad-3e703bd9b708',shared_targets=False,size=1,snapshot_id=None,snapshots=<?>,source_volid=None,status='available',terminated_at=None,updated_at=2025-06-13T08:35:44Z,use_quota=True,user_id='1f8b2b691e9d4c519c5c0bcaea3259d3',volume_attachment=VolumeAttachmentList,volume_type=VolumeType(c49c4710-bd22-49f3-a996-6674d2a72f1e),volume_type_id=c49c4710-bd22-49f3-a996-6674d2a72f1e), 'snapshot': Snapshot(cgsnapshot=<?>,cgsnapshot_id=None,created_at=2025-06-13T08:35:45Z,deleted=False,deleted_at=None,display_description=None,display_name='tempest-VolumesSnapshotsTestJSON-Snapshot-243903365',encryption_key_id=None,group_snapshot=<?>,group_snapshot_id=None,id=c1485c16-ea78-4650-bda0-b1361829df32,metadata={},progress='0%',project_id='806cb07e117d4c08ad81486fa3479b8b',provider_auth=None,provider_id=None,provider_location=None,status='creating',updated_at=None,use_quota=True,user_id='1f8b2b691e9d4c519c5c0bcaea3259d3',volume=<?>,volume_id=76d14c76-9b45-4860-ae3f-f0441d15c448,volume_size=1,volume_type_id=c49c4710-bd22-49f3-a996-6674d2a72f1e), 'backend': 'cinder-volume-worker@RBD#rbddriver'}"
+            },
+            {
+              "key": "name",
+              "type": "string",
+              "value": "cinder.scheduler.manager.SchedulerManager.create_snapshot"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "internal"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p4",
+          "warnings": [
+            "clock skew adjustment disabled; not applying calculated delta of -117.7205ms"
+          ]
+        },
+        {
+          "traceID": "c442ddd0a72b4898905cae3c33e11319",
+          "spanID": "81880818b72e344a",
+          "operationName": "WSGI_GET_/v2.1/806cb07e117d4c08ad81486fa3479b8b/os-snapshots/c1485c16-ea78-4650-bda0-b1361829df32",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "c442ddd0a72b4898905cae3c33e11319",
+              "spanID": "905cae3c33e11319"
+            }
+          ],
+          "startTime": 1749803746088624,
+          "duration": 138313,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v2.1/806cb07e117d4c08ad81486fa3479b8b/os-snapshots/c1485c16-ea78-4650-bda0-b1361829df32"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": [
+            "invalid parent span IDs=905cae3c33e11319; skipping clock skew adjustment"
+          ]
+        },
+        {
+          "traceID": "c442ddd0a72b4898905cae3c33e11319",
+          "spanID": "8c105b6c0f036d94",
+          "operationName": "WSGI_GET_/v3/806cb07e117d4c08ad81486fa3479b8b/snapshots/c1485c16-ea78-4650-bda0-b1361829df32",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "c442ddd0a72b4898905cae3c33e11319",
+              "spanID": "81880818b72e344a"
+            }
+          ],
+          "startTime": 1749803746136903,
+          "duration": 50616,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v3/806cb07e117d4c08ad81486fa3479b8b/snapshots/c1485c16-ea78-4650-bda0-b1361829df32"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "error",
+              "type": "bool",
+              "value": true
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [
+            {
+              "timestamp": 1749803746187501,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "error.kind",
+                  "type": "string",
+                  "value": "sqlalchemy.exc.OperationalError"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "(pymysql.err.OperationalError) (1130, \"10.233.91.46' is not allowed to connect to this MariaDB server\")"
+                }
+              ]
+            }
+          ],
+          "processID": "p3",
+          "warnings": null
+        }
+      ],
+      "processes": {
+        "p1": {
+          "serviceName": "nova-osapi_compute",
+          "tags": [
+            {
+              "key": "otel.library.name",
+              "type": "string",
+              "value": "osprofiler.drivers.otlp"
+            }
+          ]
+        },
+        "p2": {
+          "serviceName": "keystone-public",
+          "tags": [
+            {
+              "key": "otel.library.name",
+              "type": "string",
+              "value": "osprofiler.drivers.otlp"
+            }
+          ]
+        },
+        "p3": {
+          "serviceName": "cinder-cinder-api",
+          "tags": [
+            {
+              "key": "otel.library.name",
+              "type": "string",
+              "value": "osprofiler.drivers.otlp"
+            }
+          ]
+        },
+        "p4": {
+          "serviceName": "cinder-cinder-scheduler",
+          "tags": [
+            {
+              "key": "otel.library.name",
+              "type": "string",
+              "value": "osprofiler.drivers.otlp"
+            }
+          ]
+        }
+      },
+      "warnings": null
+    },
+    {
+      "traceID": "ee6e4e7e35f94ecba9a08c267f5cd272",
+      "spans": [
+        {
+          "traceID": "ee6e4e7e35f94ecba9a08c267f5cd272",
+          "spanID": "b750c557c20ab18a",
+          "operationName": "WSGI_GET_/v2.1/7ca55bd9f69c4fd9b9b38a5bf53f3b8e/os-volumes/detail",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "ee6e4e7e35f94ecba9a08c267f5cd272",
+              "spanID": "a9a08c267f5cd272"
+            }
+          ],
+          "startTime": 1749804051054144,
+          "duration": 113906,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v2.1/7ca55bd9f69c4fd9b9b38a5bf53f3b8e/os-volumes/detail"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": [
+            "invalid parent span IDs=a9a08c267f5cd272; skipping clock skew adjustment"
+          ]
+        },
+        {
+          "traceID": "ee6e4e7e35f94ecba9a08c267f5cd272",
+          "spanID": "82454115c20f63c8",
+          "operationName": "WSGI_GET_/v3/7ca55bd9f69c4fd9b9b38a5bf53f3b8e/volumes/detail",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "ee6e4e7e35f94ecba9a08c267f5cd272",
+              "spanID": "b750c557c20ab18a"
+            }
+          ],
+          "startTime": 1749804051088066,
+          "duration": 63500,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v3/7ca55bd9f69c4fd9b9b38a5bf53f3b8e/volumes/detail"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p2",
+          "warnings": null
+        }
+      ],
+      "processes": {
+        "p1": {
+          "serviceName": "nova-osapi_compute",
+          "tags": [
+            {
+              "key": "otel.library.name",
+              "type": "string",
+              "value": "osprofiler.drivers.otlp"
+            }
+          ]
+        },
+        "p2": {
+          "serviceName": "cinder-cinder-api",
+          "tags": [
+            {
+              "key": "otel.library.name",
+              "type": "string",
+              "value": "osprofiler.drivers.otlp"
+            }
+          ]
+        }
+      },
+      "warnings": null
+    },
+    {
+      "traceID": "bf6055a8fd664f36aea3595eb2099685",
+      "spans": [
+        {
+          "traceID": "bf6055a8fd664f36aea3595eb2099685",
+          "spanID": "a551fc0a950f629a",
+          "operationName": "WSGI_GET_/v2.1/7ca55bd9f69c4fd9b9b38a5bf53f3b8e/os-volumes/detail",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "bf6055a8fd664f36aea3595eb2099685",
+              "spanID": "aea3595eb2099685"
+            }
+          ],
+          "startTime": 1749804050806926,
+          "duration": 108835,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v2.1/7ca55bd9f69c4fd9b9b38a5bf53f3b8e/os-volumes/detail"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": [
+            "invalid parent span IDs=aea3595eb2099685; skipping clock skew adjustment"
+          ]
+        },
+        {
+          "traceID": "bf6055a8fd664f36aea3595eb2099685",
+          "spanID": "80db66b48153f4e6",
+          "operationName": "WSGI_GET_/v3/7ca55bd9f69c4fd9b9b38a5bf53f3b8e/volumes/detail",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "bf6055a8fd664f36aea3595eb2099685",
+              "spanID": "a551fc0a950f629a"
+            }
+          ],
+          "startTime": 1749804050836974,
+          "duration": 61096,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v3/7ca55bd9f69c4fd9b9b38a5bf53f3b8e/volumes/detail"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p2",
+          "warnings": null
+        },
+        {
+          "traceID": "bf6055a8fd664f36aea3595eb2099685",
+          "spanID": "aa160a4196d618c4",
+          "operationName": "WSGI_GET_/v2.1/7ca55bd9f69c4fd9b9b38a5bf53f3b8e/os-volumes/detail",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "bf6055a8fd664f36aea3595eb2099685",
+              "spanID": "aea3595eb2099685"
+            }
+          ],
+          "startTime": 1749804050927677,
+          "duration": 111960,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v2.1/7ca55bd9f69c4fd9b9b38a5bf53f3b8e/os-volumes/detail"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": "offset=1&limit=1"
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": [
+            "invalid parent span IDs=aea3595eb2099685; skipping clock skew adjustment"
+          ]
+        },
+        {
+          "traceID": "bf6055a8fd664f36aea3595eb2099685",
+          "spanID": "91e3dccada1754a4",
+          "operationName": "WSGI_GET_/v3/7ca55bd9f69c4fd9b9b38a5bf53f3b8e/volumes/detail",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "bf6055a8fd664f36aea3595eb2099685",
+              "spanID": "aa160a4196d618c4"
+            }
+          ],
+          "startTime": 1749804050960092,
+          "duration": 61826,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v3/7ca55bd9f69c4fd9b9b38a5bf53f3b8e/volumes/detail"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p2",
+          "warnings": null
+        }
+      ],
+      "processes": {
+        "p1": {
+          "serviceName": "nova-osapi_compute",
+          "tags": [
+            {
+              "key": "otel.library.name",
+              "type": "string",
+              "value": "osprofiler.drivers.otlp"
+            }
+          ]
+        },
+        "p2": {
+          "serviceName": "cinder-cinder-api",
+          "tags": [
+            {
+              "key": "otel.library.name",
+              "type": "string",
+              "value": "osprofiler.drivers.otlp"
+            }
+          ]
+        }
+      },
+      "warnings": null
+    },
+    {
+      "traceID": "2ca3ad1dc7da4b70933d4413188f5e57",
+      "spans": [
+        {
+          "traceID": "2ca3ad1dc7da4b70933d4413188f5e57",
+          "spanID": "82916dd0a0e49f35",
+          "operationName": "WSGI_GET_/v2.1/7ca55bd9f69c4fd9b9b38a5bf53f3b8e/os-volumes/detail",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "2ca3ad1dc7da4b70933d4413188f5e57",
+              "spanID": "933d4413188f5e57"
+            }
+          ],
+          "startTime": 1749804050681184,
+          "duration": 112120,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v2.1/7ca55bd9f69c4fd9b9b38a5bf53f3b8e/os-volumes/detail"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": "limit=2"
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": [
+            "invalid parent span IDs=933d4413188f5e57; skipping clock skew adjustment"
+          ]
+        },
+        {
+          "traceID": "2ca3ad1dc7da4b70933d4413188f5e57",
+          "spanID": "a708efb045ce17e0",
+          "operationName": "WSGI_GET_/v3/7ca55bd9f69c4fd9b9b38a5bf53f3b8e/volumes/detail",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "2ca3ad1dc7da4b70933d4413188f5e57",
+              "spanID": "82916dd0a0e49f35"
+            }
+          ],
+          "startTime": 1749804050714728,
+          "duration": 61555,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v3/7ca55bd9f69c4fd9b9b38a5bf53f3b8e/volumes/detail"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p2",
+          "warnings": null
+        }
+      ],
+      "processes": {
+        "p1": {
+          "serviceName": "nova-osapi_compute",
+          "tags": [
+            {
+              "key": "otel.library.name",
+              "type": "string",
+              "value": "osprofiler.drivers.otlp"
+            }
+          ]
+        },
+        "p2": {
+          "serviceName": "cinder-cinder-api",
+          "tags": [
+            {
+              "key": "otel.library.name",
+              "type": "string",
+              "value": "osprofiler.drivers.otlp"
+            }
+          ]
+        }
+      },
+      "warnings": null
+    },
+    {
+      "traceID": "17aa94414e3f4f8981e6ea181cadcb41",
+      "spans": [
+        {
+          "traceID": "17aa94414e3f4f8981e6ea181cadcb41",
+          "spanID": "822a8a643e87aed1",
+          "operationName": "WSGI_GET_/v2.1/7ca55bd9f69c4fd9b9b38a5bf53f3b8e/os-volumes",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "17aa94414e3f4f8981e6ea181cadcb41",
+              "spanID": "81e6ea181cadcb41"
+            }
+          ],
+          "startTime": 1749804050430679,
+          "duration": 114664,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v2.1/7ca55bd9f69c4fd9b9b38a5bf53f3b8e/os-volumes"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": [
+            "invalid parent span IDs=81e6ea181cadcb41; skipping clock skew adjustment"
+          ]
+        },
+        {
+          "traceID": "17aa94414e3f4f8981e6ea181cadcb41",
+          "spanID": "b9c4cee9d350394a",
+          "operationName": "WSGI_GET_/v3/7ca55bd9f69c4fd9b9b38a5bf53f3b8e/volumes/detail",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "17aa94414e3f4f8981e6ea181cadcb41",
+              "spanID": "822a8a643e87aed1"
+            }
+          ],
+          "startTime": 1749804050460656,
+          "duration": 67394,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v3/7ca55bd9f69c4fd9b9b38a5bf53f3b8e/volumes/detail"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p2",
+          "warnings": null
+        },
+        {
+          "traceID": "17aa94414e3f4f8981e6ea181cadcb41",
+          "spanID": "ad8afd621a159f6c",
+          "operationName": "WSGI_GET_/v2.1/7ca55bd9f69c4fd9b9b38a5bf53f3b8e/os-volumes",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "17aa94414e3f4f8981e6ea181cadcb41",
+              "spanID": "81e6ea181cadcb41"
+            }
+          ],
+          "startTime": 1749804050557476,
+          "duration": 110134,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v2.1/7ca55bd9f69c4fd9b9b38a5bf53f3b8e/os-volumes"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": "offset=1&limit=1"
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": [
+            "invalid parent span IDs=81e6ea181cadcb41; skipping clock skew adjustment"
+          ]
+        },
+        {
+          "traceID": "17aa94414e3f4f8981e6ea181cadcb41",
+          "spanID": "9b8fc6e02d9ea180",
+          "operationName": "WSGI_GET_/v3/7ca55bd9f69c4fd9b9b38a5bf53f3b8e/volumes/detail",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "17aa94414e3f4f8981e6ea181cadcb41",
+              "spanID": "ad8afd621a159f6c"
+            }
+          ],
+          "startTime": 1749804050588203,
+          "duration": 62215,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v3/7ca55bd9f69c4fd9b9b38a5bf53f3b8e/volumes/detail"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p2",
+          "warnings": null
+        }
+      ],
+      "processes": {
+        "p1": {
+          "serviceName": "nova-osapi_compute",
+          "tags": [
+            {
+              "key": "otel.library.name",
+              "type": "string",
+              "value": "osprofiler.drivers.otlp"
+            }
+          ]
+        },
+        "p2": {
+          "serviceName": "cinder-cinder-api",
+          "tags": [
+            {
+              "key": "otel.library.name",
+              "type": "string",
+              "value": "osprofiler.drivers.otlp"
+            }
+          ]
+        }
+      },
+      "warnings": null
+    },
+    {
+      "traceID": "f84ca01a1c594ea2a3fb10073408fb02",
+      "spans": [
+        {
+          "traceID": "f84ca01a1c594ea2a3fb10073408fb02",
+          "spanID": "8ba5135449d7067d",
+          "operationName": "WSGI_GET_/v2.1/7ca55bd9f69c4fd9b9b38a5bf53f3b8e/os-volumes",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "f84ca01a1c594ea2a3fb10073408fb02",
+              "spanID": "a3fb10073408fb02"
+            }
+          ],
+          "startTime": 1749804050136210,
+          "duration": 139151,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v2.1/7ca55bd9f69c4fd9b9b38a5bf53f3b8e/os-volumes"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": [
+            "invalid parent span IDs=a3fb10073408fb02; skipping clock skew adjustment"
+          ]
+        },
+        {
+          "traceID": "f84ca01a1c594ea2a3fb10073408fb02",
+          "spanID": "92a2725f505473e3",
+          "operationName": "WSGI_GET_/v3/7ca55bd9f69c4fd9b9b38a5bf53f3b8e/volumes/detail",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "f84ca01a1c594ea2a3fb10073408fb02",
+              "spanID": "8ba5135449d7067d"
+            }
+          ],
+          "startTime": 1749804050193001,
+          "duration": 64660,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v3/7ca55bd9f69c4fd9b9b38a5bf53f3b8e/volumes/detail"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p2",
+          "warnings": null
+        }
+      ],
+      "processes": {
+        "p1": {
+          "serviceName": "nova-osapi_compute",
+          "tags": [
+            {
+              "key": "otel.library.name",
+              "type": "string",
+              "value": "osprofiler.drivers.otlp"
+            }
+          ]
+        },
+        "p2": {
+          "serviceName": "cinder-cinder-api",
+          "tags": [
+            {
+              "key": "otel.library.name",
+              "type": "string",
+              "value": "osprofiler.drivers.otlp"
+            }
+          ]
+        }
+      },
+      "warnings": null
+    },
+    {
+      "traceID": "55181ca10f0141a7851d33801ebc22d4",
+      "spans": [
+        {
+          "traceID": "55181ca10f0141a7851d33801ebc22d4",
+          "spanID": "9c4ce592a3f730ba",
+          "operationName": "WSGI_POST_/v3/000835049be04a22b5b0a4c3a46965f2/volumes",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "55181ca10f0141a7851d33801ebc22d4",
+              "spanID": "851d33801ebc22d4"
+            }
+          ],
+          "startTime": 1749798650273544,
+          "duration": 847734,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v3/000835049be04a22b5b0a4c3a46965f2/volumes"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "POST"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": [
+            "invalid parent span IDs=851d33801ebc22d4; skipping clock skew adjustment"
+          ]
+        },
+        {
+          "traceID": "55181ca10f0141a7851d33801ebc22d4",
+          "spanID": "9c9db6ce7e7cdfdf",
+          "operationName": "WSGI_GET_/v3/auth/tokens",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "55181ca10f0141a7851d33801ebc22d4",
+              "spanID": "9c4ce592a3f730ba"
+            }
+          ],
+          "startTime": 1749798650308200,
+          "duration": 382803,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v3/auth/tokens"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p2",
+          "warnings": null
+        },
+        {
+          "traceID": "55181ca10f0141a7851d33801ebc22d4",
+          "spanID": "b7a85e079acbeedf",
+          "operationName": "rpc",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "55181ca10f0141a7851d33801ebc22d4",
+              "spanID": "9c4ce592a3f730ba"
+            }
+          ],
+          "startTime": 1749798651102677,
+          "duration": 108689,
+          "tags": [
+            {
+              "key": "args",
+              "type": "string",
+              "value": "(<cinder.scheduler.manager.SchedulerManager object at 0x7f05eebfa5c0>, <cinder.context.RequestContext object at 0x7f05e9abb7f0>)"
+            },
+            {
+              "key": "kwargs",
+              "type": "string",
+              "value": "{'snapshot_id': None, 'image_id': None, 'request_spec': RequestSpec(CG_backend=<?>,availability_zones=['az1'],backup_id=None,cgsnapshot_id=None,consistencygroup_id=None,group_backend=<?>,group_id=None,image_id=None,operation=<?>,resource_backend=<?>,snapshot_id=None,source_replicaid=<?>,source_volid=None,volume=Volume(7f81c832-b745-4818-9daf-9c89a07d143e),volume_id=7f81c832-b745-4818-9daf-9c89a07d143e,volume_properties=VolumeProperties,volume_type=VolumeType(c49c4710-bd22-49f3-a996-6674d2a72f1e)), 'filter_properties': {}, 'volume': Volume(_name_id=None,admin_metadata={},attach_status='detached',availability_zone='az1',bootable=False,cluster=<?>,cluster_name=None,consistencygroup=<?>,consistencygroup_id=None,created_at=2025-06-13T07:10:51Z,deleted=False,deleted_at=None,display_description=None,display_name='tempest-VolumesAssistedSnapshotsTest-volume-599766570',ec2_id=None,encryption_key_id=None,glance_metadata=<?>,group=<?>,group_id=None,host=None,id=7f81c832-b745-4818-9daf-9c89a07d143e,launched_at=None,metadata={},migration_status=None,multiattach=False,previous_status=None,project_id='000835049be04a22b5b0a4c3a46965f2',provider_auth=None,provider_geometry=None,provider_id=None,provider_location=None,replication_driver_data=None,replication_extended_status=None,replication_status=None,scheduled_at=None,service_uuid=None,shared_targets=True,size=1,snapshot_id=None,snapshots=<?>,source_volid=None,status='creating',terminated_at=None,updated_at=None,use_quota=True,user_id='5cf9e8bf2541410d84a3a3cb57658372',volume_attachment=VolumeAttachmentList,volume_type=VolumeType(c49c4710-bd22-49f3-a996-6674d2a72f1e),volume_type_id=c49c4710-bd22-49f3-a996-6674d2a72f1e), 'backup_id': None}"
+            },
+            {
+              "key": "name",
+              "type": "string",
+              "value": "cinder.scheduler.manager.SchedulerManager.create_volume"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "internal"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p3",
+          "warnings": [
+            "clock skew adjustment disabled; not applying calculated delta of -459.6105ms"
+          ]
+        },
+        {
+          "traceID": "55181ca10f0141a7851d33801ebc22d4",
+          "spanID": "9174ab8b95289a09",
+          "operationName": "WSGI_GET_/v3/000835049be04a22b5b0a4c3a46965f2/volumes/7f81c832-b745-4818-9daf-9c89a07d143e",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "55181ca10f0141a7851d33801ebc22d4",
+              "spanID": "851d33801ebc22d4"
+            }
+          ],
+          "startTime": 1749798651138784,
+          "duration": 96115,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v3/000835049be04a22b5b0a4c3a46965f2/volumes/7f81c832-b745-4818-9daf-9c89a07d143e"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": [
+            "invalid parent span IDs=851d33801ebc22d4; skipping clock skew adjustment"
+          ]
+        },
+        {
+          "traceID": "55181ca10f0141a7851d33801ebc22d4",
+          "spanID": "89d66f4f1ccd9413",
+          "operationName": "WSGI_GET_/v3/000835049be04a22b5b0a4c3a46965f2/volumes/7f81c832-b745-4818-9daf-9c89a07d143e",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "55181ca10f0141a7851d33801ebc22d4",
+              "spanID": "851d33801ebc22d4"
+            }
+          ],
+          "startTime": 1749798652256141,
+          "duration": 77509,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v3/000835049be04a22b5b0a4c3a46965f2/volumes/7f81c832-b745-4818-9daf-9c89a07d143e"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p1",
+          "warnings": [
+            "invalid parent span IDs=851d33801ebc22d4; skipping clock skew adjustment"
+          ]
+        },
+        {
+          "traceID": "55181ca10f0141a7851d33801ebc22d4",
+          "spanID": "8496f90869d22763",
+          "operationName": "WSGI_POST_/v3/auth/tokens",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "55181ca10f0141a7851d33801ebc22d4",
+              "spanID": "851d33801ebc22d4"
+            }
+          ],
+          "startTime": 1749798652359082,
+          "duration": 424194,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v3/auth/tokens"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "POST"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p2",
+          "warnings": [
+            "invalid parent span IDs=851d33801ebc22d4; skipping clock skew adjustment"
+          ]
+        },
+        {
+          "traceID": "55181ca10f0141a7851d33801ebc22d4",
+          "spanID": "b8cedb1963aa148d",
+          "operationName": "WSGI_POST_/v2.1/3f5fc40a76ad4e839992eb8ec9605714/servers",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "55181ca10f0141a7851d33801ebc22d4",
+              "spanID": "851d33801ebc22d4"
+            }
+          ],
+          "startTime": 1749798652796884,
+          "duration": 60697567,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v2.1/3f5fc40a76ad4e839992eb8ec9605714/servers"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "POST"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p4",
+          "warnings": [
+            "invalid parent span IDs=851d33801ebc22d4; skipping clock skew adjustment"
+          ]
+        },
+        {
+          "traceID": "55181ca10f0141a7851d33801ebc22d4",
+          "spanID": "b1ad2eafa358aacd",
+          "operationName": "WSGI_GET_/v3/auth/tokens",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "55181ca10f0141a7851d33801ebc22d4",
+              "spanID": "b8cedb1963aa148d"
+            }
+          ],
+          "startTime": 1749798652835910,
+          "duration": 172117,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v3/auth/tokens"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p2",
+          "warnings": null
+        },
+        {
+          "traceID": "55181ca10f0141a7851d33801ebc22d4",
+          "spanID": "a21768e6bcfd581c",
+          "operationName": "WSGI_GET_/v2/images/44070f2f-26b4-4a2f-a253-48f020076076",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "55181ca10f0141a7851d33801ebc22d4",
+              "spanID": "b8cedb1963aa148d"
+            }
+          ],
+          "startTime": 1749798653137376,
+          "duration": 243850,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v2/images/44070f2f-26b4-4a2f-a253-48f020076076"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p5",
+          "warnings": null
+        },
+        {
+          "traceID": "55181ca10f0141a7851d33801ebc22d4",
+          "spanID": "902c9e1f4d6ccb95",
+          "operationName": "WSGI_GET_/v3/auth/tokens",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "55181ca10f0141a7851d33801ebc22d4",
+              "spanID": "a21768e6bcfd581c"
+            }
+          ],
+          "startTime": 1749798653172986,
+          "duration": 150970,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v3/auth/tokens"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p2",
+          "warnings": null
+        },
+        {
+          "traceID": "55181ca10f0141a7851d33801ebc22d4",
+          "spanID": "9e73c391c2526c28",
+          "operationName": "WSGI_GET_/v2/schemas/image",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "55181ca10f0141a7851d33801ebc22d4",
+              "spanID": "b8cedb1963aa148d"
+            }
+          ],
+          "startTime": 1749798653386655,
+          "duration": 36711,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v2/schemas/image"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p5",
+          "warnings": null
+        },
+        {
+          "traceID": "55181ca10f0141a7851d33801ebc22d4",
+          "spanID": "80c70ac7a53c1423",
+          "operationName": "WSGI_GET_/v2.0/networks",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "55181ca10f0141a7851d33801ebc22d4",
+              "spanID": "b8cedb1963aa148d"
+            }
+          ],
+          "startTime": 1749798653431834,
+          "duration": 60039589,
+          "tags": [
+            {
+              "key": "http.path",
+              "type": "string",
+              "value": "/v2.0/networks"
+            },
+            {
+              "key": "http.query",
+              "type": "string",
+              "value": "tenant_id=3f5fc40a76ad4e839992eb8ec9605714&shared=False"
+            },
+            {
+              "key": "http.method",
+              "type": "string",
+              "value": "GET"
+            },
+            {
+              "key": "http.scheme",
+              "type": "string",
+              "value": "http"
+            },
+            {
+              "key": "span.kind",
+              "type": "string",
+              "value": "server"
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "otlp"
+            }
+          ],
+          "logs": [],
+          "processID": "p6",
+          "warnings": null
+        }
+      ],
+      "processes": {
+        "p1": {
+          "serviceName": "cinder-cinder-api",
+          "tags": [
+            {
+              "key": "otel.library.name",
+              "type": "string",
+              "value": "osprofiler.drivers.otlp"
+            }
+          ]
+        },
+        "p2": {
+          "serviceName": "keystone-public",
+          "tags": [
+            {
+              "key": "otel.library.name",
+              "type": "string",
+              "value": "osprofiler.drivers.otlp"
+            }
+          ]
+        },
+        "p3": {
+          "serviceName": "cinder-cinder-scheduler",
+          "tags": [
+            {
+              "key": "otel.library.name",
+              "type": "string",
+              "value": "osprofiler.drivers.otlp"
+            }
+          ]
+        },
+        "p4": {
+          "serviceName": "nova-osapi_compute",
+          "tags": [
+            {
+              "key": "otel.library.name",
+              "type": "string",
+              "value": "osprofiler.drivers.otlp"
+            }
+          ]
+        },
+        "p5": {
+          "serviceName": "glance-api",
+          "tags": [
+            {
+              "key": "otel.library.name",
+              "type": "string",
+              "value": "osprofiler.drivers.otlp"
+            }
+          ]
+        },
+        "p6": {
+          "serviceName": "neutron-neutron-server",
+          "tags": [
+            {
+              "key": "otel.library.name",
+              "type": "string",
+              "value": "osprofiler.drivers.otlp"
+            }
+          ]
+        }
+      },
+      "warnings": null
+    }
+  ],
+  "total": 0,
+  "limit": 0,
+  "offset": 0,
+  "errors": null
+}
